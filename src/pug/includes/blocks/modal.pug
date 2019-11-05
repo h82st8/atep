@@ -1,0 +1,18 @@
+include ../mixins.pug
+
+section.modal
+	+picture('modal__article-photo','modal-favorites')
+	form.modal__form.modal__form--favorites-login(action='' method='post' name='login-form')
+		h3.modal__title Вход
+		label.modal__label.visually-hidden(for='login-email') Введите email
+		input#login-email.modal__input(type='email' name='login' placeholder='Email' required='')
+		label.modal__label.visually-hidden(for='login-password') Введите пароль
+		input#login-password.modal__input(name='pasword' type='password' pattern='(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}' placeholder='Password' required='')
+		#recaptcha.modal__input.modal__input--captcha.g-recaptcha(data-sitekey='6LeBMLQUAAAAAMpIkzxAeI6yHx-dgA7k6XZaSZ2U')
+		.modal__label.modal__label--captchaError
+		.modal__buttons
+			.modal__button-group
+				input#submit-login.modal__button.modal__button--login.form-button(type='submit' name='submit_login-login' value='Войти')
+				+link('modal__link link-recovery','Забыли пароль?','recovery-password.html')
+			span или
+			+link('modal__button form-button','Подписаться')

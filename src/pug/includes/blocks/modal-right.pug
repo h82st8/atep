@@ -1,0 +1,18 @@
+include ../mixins.pug
+
+section.modal-right.modal-right--favorites
+	h3.modal-right__title Избранное
+	each val in ['','','']
+		.modal-right__item
+			+picture('modal-right__photo','modal-favorites-img_2')
+			.modal-right__content
+				button.modal-right__delete
+					span.visually-hidden Удалить из избранного
+				button.modal-right__add-cart Добавить в корзину
+				p.modal-right__text Boys light blue jacket
+				p.modal-right__text
+					| 1 × 
+					span.modal-right__price $35.99
+	+link('modal-right__button form-button','Lookbook','lookbook.html')
+	button.modal-right__close
+		span.visually-hidden Выйти из избранного

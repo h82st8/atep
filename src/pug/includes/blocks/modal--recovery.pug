@@ -1,0 +1,13 @@
+include ../mixins.pug
+
+section.modal.modal--recovery
+	form.modal__form(action='' method='post' name='password-recovery-form')
+		h3.modal__title.modal__title--recovery Восстановление пароля
+		label.modal__label
+			span.modal__text Введите ваш email адрес...
+			input#email-recovery.modal__input.modal__input--recovery(type='email' name='login-recovery' placeholder='Email...' required='')
+		p.modal__text
+			| Укажите адрес эл. почты, который вы использовали при оформлении заказов в ATEP. Мы вышлем вам инструкцию по восстановлению пароля.
+		.modal__buttons.modal__buttons--recovery
+			input.modal__button.modal__button--recovery.form-button(type='submit' value='Восстановить пароль')
+			+link('modal__button form-button link-login modal__button--recovery','Вспомнили пароль?','login.html')

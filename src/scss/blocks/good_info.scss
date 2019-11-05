@@ -1,0 +1,146 @@
+.good_margin {
+	margin-right: 3%;
+	margin-left: 7%;
+}
+.good_info {
+
+	&__btns {
+		padding-bottom: 15px;
+		border-bottom: 2px solid #C8C8C8;
+		width: 75%;
+
+		.good_info__btn {
+			display: inline-block;
+
+			padding: 0 20px;
+			border: none;
+			border-bottom: 1px solid rgba(#000,0);
+
+			background-color: #fff;
+
+			font-family: Segoe UI;
+			font-size: 22px;
+			line-height: 29px;
+			text-align: center;
+
+			cursor: pointer;
+		}
+
+		.active {
+			position: relative;
+
+			&:after {
+				position: absolute;
+				bottom: -18px;
+				left: 0;
+				content: '';
+				width: 100%;
+				height: 2px;
+				background-color: #000;
+			}
+		}
+	}
+
+	&__content {
+		.good_info__details {
+			margin: 30px 0;
+			width: 70%;
+
+			.good_info__title,
+			.good_info__txt {
+				font-family: Segoe UI;
+				font-size: 22px;
+				line-height: 29px;
+			}
+
+			.good_info__title {
+				margin-bottom: 0;
+				font-weight: normal;
+			}
+
+			.good_info__txt {
+				margin-top: 0;
+			}
+		}
+
+		.good_info__review_wrap {
+			display: none;
+
+			.good_info__review {
+				margin: 30px auto;
+				width: 45%;
+				padding: 20px 40px;
+				border: 1px solid #000;
+				border-radius: 30px;
+
+				.review_rating {
+					display: inline-block;
+				}
+
+				.review_txt,
+				.review_name {
+					font-family: Segoe UI;
+					font-size: 16px;
+					line-height: 21px;
+				}
+			}
+		}
+
+		.good_info__form_wrap {
+			display: none;
+
+			margin: 30px auto;
+			width: 60%;
+
+			.good_info__form_txt {
+				width: 80%;
+
+				font-family: Segoe UI;
+				font-size: 20px;
+				line-height: 27px;
+			}
+
+			.form__rating {
+				margin-top: 15px;
+			}
+
+			.good_info__form {
+
+				.good_info__form_box {
+					margin: 20px 0;
+
+					.good_info__form_input {
+					display: block;
+					margin: 20px 0;
+					width: 100%;
+					}
+					.good_info__form_name_input,
+					.good_info__form_email_input {
+						height: 2em;
+					}
+				}
+				.good_info__form_btn_wrap {
+					display: grid;
+
+					.good_info__form_btn {
+						justify-self: end;
+
+						padding: 15px 50px;
+						border: 1px solid #000;
+						border-radius: 5px;
+
+						background-color: #fff;
+
+						font-family: Segoe UI;
+						font-size: 17px;
+						line-height: 23px;
+
+						&:hover {
+							background-color: #e5e5e5;
+						}
+					}
+				}
+			}
+		}
+	}
+}

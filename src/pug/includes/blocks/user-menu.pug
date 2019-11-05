@@ -1,0 +1,36 @@
+include ../mixins.pug
+
+ul.header__item.header__item--user-menu.user-menu
+	li.user-menu__item.user-menu__item--favorites
+		if(favoritesHtml)
+			+icon('link-favorites','Избранное','icon-favorites')
+		else
+			+iconLink('link-favorites','favorites.html','Избранное','icon-favorites')
+	li.user-menu__item.user-menu__item--cart
+		if(cartHtml)
+			a.user-menu__link.link-cart
+				span.visually-hidden В вашей корзине&ensp;
+				span.user-menu__number-purchases 0
+				span.visually-hidden &ensp;товаров
+				svg.user-menu__icon(width='25' height='25')
+					use(xlink:href='img/sprite.svg#icon-cart')
+		else
+			a.user-menu__link.link-cart(href='cart.html')
+				span.visually-hidden В вашей корзине&ensp;
+				span.user-menu__number-purchases 0
+				span.visually-hidden &ensp;товаров
+				svg.user-menu__icon(width='25' height='25')
+					use(xlink:href='img/sprite.svg#icon-cart')
+	li.user-menu__item.user-menu__item--user
+		if(loginHtml)
+			+icon('link-login','Войти как пользователь','icon-user')
+		else
+			+iconLink('link-login','login.html','Войти как пользователь','icon-user')
+	li.user-menu__item.user-menu__item--search.user-menu--toggle
+		if(searchHtml)
+			+icon('link-search','Поиск','icon-search')
+		else
+			+iconLink('link-search','search.html','Поиск','icon-search')
+	li.user-menu__item.user-menu__item--search-close
+		button.user-menu__search-close
+			span.visually-hidden Закрыть поиск

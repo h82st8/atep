@@ -1,0 +1,25 @@
+.main-content {
+    margin-top: 75px;
+
+    .blog-figure {
+        margin: 0;
+    
+        .blog-figure__caption {
+            margin-top: 14px;
+            @include font($accent-font-family, 13px, normal, 19px, $main-text-color, none);
+        }
+    }
+
+    .main-content__text-content {
+        @include font($accent-font-family, 23px, normal, 34px, $main-text-color, none);
+        letter-spacing: 1.4px;
+    }
+    
+    .main-content__blackquote {
+        margin-left: 115px;
+        padding-left: 14px;
+        border-left: 2px solid black;
+        @include font($accent-font-family, 23px, normal, 34px, $main-text-color, none);
+        letter-spacing: 1.4px;
+    }
+}

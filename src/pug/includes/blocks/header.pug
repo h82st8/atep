@@ -1,0 +1,10 @@
+include ../mixins.pug
+
+header.header
+	.header__wrapper.main-wrapper
+		+link('accessible header__accessible', 'Перейти к основному контенту','#main-content')
+		.header__item.header__item--logo
+			+logoItem
+		include main-nav.pug
+		include user-menu.pug
+.header__shadow

@@ -1,0 +1,118 @@
+.comments {
+    margin-top: 69px;
+
+    .comments__header{
+        @include font($accent-font-family, 23px, normal, 34px, $main-text-color, none);
+    }
+
+    .comments__list {
+        margin-top: 75px;
+        list-style: none;
+        padding-left: 0;
+    }
+    
+    .comments__item {
+        padding-top: 31px;
+        padding-bottom: 31px;
+        border-top: 1px solid #D6D6D6;
+        @include flex(row, center);
+    }
+}
+
+.comments__item:nth-child(2n) {
+    .comments__item__left {
+        margin-left: 117px;
+    }
+}
+
+.comments__user-img {
+    width: 116px;
+}
+
+.comments__item__right {
+    width: 907px;
+    margin-left: 33px;
+    @include font($accent-font-family, 23px, normal, 34px, $main-text-color, none);
+    letter-spacing: 1px;
+
+    .comments__user-name {
+        margin-top: 0;
+    }
+
+    .comments__user-blockquote {
+        margin-left: 0;
+    }
+
+}
+
+.comments-form {
+    width: 936px;
+    margin-left: 147px;
+    margin-bottom: 51px;
+    @include flex(column, center);
+
+    .comments-form__header {
+        @include font($accent-font-family, 23px, normal, 34px, $main-text-color, none);
+        margin: 0;
+    }
+
+    .comments-form__label-comments,
+    .comments-form__label-name,
+    .comments-form__label-email,
+    .comments-form__textarea,
+    .comments-form__input-name,
+    .comments-form__input-email,
+    .comments-form__submit {
+        margin-top: 30px;
+    }
+
+    .comments-form__label-comments,
+    .comments-form__label-name,
+    .comments-form__label-email {
+        @include font($main-font-family, 20px, normal, 27px, $main-text-color, none);
+    }
+
+    .comments-form__textarea {
+        width: 930px;
+        height: 342px;
+        border-radius: 10px;
+        border: 1px solid #D1D1D1;
+        z-index: 1;
+    }
+
+    .comments-form__input-name,
+    .comments-form__input-email,
+    .comments-form__submit {
+        width: 930px;
+        height: 70px;
+        border-radius: 10px;
+        outline: 0;
+        border: 1px solid #D1D1D1;
+    }
+
+    .comments-form__submit {
+        width: 270px;
+        height: 49px;
+        border: 1px solid #000000;
+        box-sizing: border-box;
+        border-radius: 4px;
+        background-color: #fff;
+        margin-left: auto;
+        margin-top: 10px;
+        padding: 0;
+        transition: 0.5s;
+        cursor: pointer;
+    }
+
+    .comments-form__submit:hover {
+        background-color:#000000;
+        color: #FFFFFF;
+    }
+
+    .comments-form__captcha{
+        width: 270px;
+        height: 49px;
+        margin-left: auto;
+        margin-top: 30px;
+    }
+}

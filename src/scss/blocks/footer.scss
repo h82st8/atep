@@ -1,0 +1,105 @@
+.footer {
+	padding   : 16px 0 24px;
+
+	background: $second-background;
+}
+
+.footer__wrapper {
+	@include flex(column, flex-start);
+
+	margin        : 0 auto;
+	width         : 690px;
+
+	align-items   : center;
+}
+
+.footer__item {
+	@include font($main-font-family, 1.333em, normal, 1.35, $main-text-color, $second-background);
+}
+
+.footer__item--menu {
+	margin-bottom: 21px;
+	width        : 100%;
+}
+
+.main-nav__link--footer {
+	@include font($main-font-family, 1em, normal, 1.35, $main-text-color, $second-background);
+}
+
+.footer__nav-menu {
+	@include flex(row, space-between);
+
+	margin    : 0;
+	padding   : 0 5px;
+
+	list-style: none;
+}
+
+.footer__item--logo {
+	font-size: 1em;
+}
+
+.footer__item--slogan {
+	padding       : 7px 165px;
+
+	@include font($main-font-family, 1.2em, normal, 1.33, $main-text-color, $second-background);
+
+	text-align    : center;
+	text-transform: capitalize;
+}
+
+.footer__form {
+	@include flex(column, center);
+
+	padding: 5px;
+
+	@include font($main-font-family, 1em, normal, 1.35, $main-text-color, $second-background);
+}
+
+.footer__form {
+	margin-bottom: 47px;
+
+	text-align   : center;
+}
+
+.footer__form-label {
+	@include flex(column, center);
+}
+
+.footer__form-input {
+	margin-top  : 27px;
+	padding     : 11px 0;
+	width       : 270px;
+
+	line-height : 1.35;
+	border      : none;
+	background  : hsla(0, 0%, 100%, .53);
+
+	&::placeholder {
+		color: $input-text-color;
+	}
+
+	&:invalid {
+		background: $main-background;
+		box-shadow: inset 0 0 0 2px #de3020;
+	}
+}
+
+.footer__form-button {
+	margin     : 15px 0 -40px;
+	padding    : 13px;
+
+	font-size  : 16px;
+	line-height: 21px;
+
+	align-self : center;
+	background : $second-background;
+
+	&:disabled {
+		display: none;
+	}
+}
+
+.footer__item--info {
+	color: rgba(0, 0, 0, 0.4);
+}

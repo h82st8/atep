@@ -1,0 +1,26 @@
+include ../mixins.pug
+
+footer.footer
+	.footer__wrapper
+		nav.footer__item.footer__item--menu
+			ul.footer__nav-menu
+				li.footer__nav-item
+					a.main-nav__link.main-nav__link--footer(href='#')
+						each val in ['A','b','o','u','t',' ','u','s']
+										span= val
+				+menuLookbookBlog('footer__nav-item', 'main-nav__link main-nav__link--footer')
+				li.footer__nav-item
+					a.main-nav__link.main-nav__link--footer(href='tel:8999999999', aria-label='Позвонить')
+						each val in ['T','e','l','.',' ','8','9','9','9','9','9','9','9','9','9']
+										span= val
+		.footer__item.footer__item--logo
+			+logoItem
+		.footer__item.footer__item--slogan
+			| On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms.
+		.footer__item
+			form#form-follow.footer__form(method='post' action='#' name='form-follow')
+				label.footer__form-label(for='form-follow-email') Follow us
+				input#form-follow-email.footer__form-input(type='email' onkeyup='checkFooterForm();' name='email' maxlength='30' placeholder='Email...')
+				input#submit-form-follow.footer__form-button.form-button(type='submit' name='submit_form-follow' value='Подписаться')
+		.footer__item.footer__item--info
+			| @ 2019 ATEP. ® All Right Reserved

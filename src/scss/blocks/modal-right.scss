@@ -1,0 +1,283 @@
+.modal-right {
+	position   : fixed;
+	display    : none;
+	top        : 0;
+	right      : 0;
+	z-index    : z('modal');
+
+	@include flex(column, flex-start, none);
+
+	padding    : 133px 60px 30px;
+	@include size(525-60-60px, 100vh);
+
+	transition : transform .7s linear;
+	transform  : translateX(100%);
+
+	background : hsla(0, 0%, 100%, .93);
+
+	&.modal--show {
+		display   : flex;
+		animation : rightOpen .7s linear;
+		transform : translateX(0%);
+	}
+
+	&.modal--close {
+		display   : flex;
+		animation : rightclose .7s linear;
+	}
+}
+
+@keyframes rightOpen {
+	0%   {transform  : translateX(100%);}
+	100% {transform  : translateX(0%);}
+}
+
+@keyframes rightClose {
+	0%   {transform  : translateX(0%);}
+	100% {transform  : translateX(100%);}
+}
+
+.modal-right__title {
+	margin : 0 0 42px;
+
+	@include font($main-font-family, 1.8em, normal, 1.33, $main-text-color, transparent);
+}
+
+.modal-right__item {
+	position      : relative;
+
+	@include flex(row, flex-start);
+
+	margin-bottom : 14px;
+	width         : 328px;
+}
+
+.modal_favorites__photo {
+	@include size(99px, 95px);
+}
+
+.modal-right__content {
+	@include flex(column, flex-start);
+
+	margin-left : 21px;
+
+	flex-grow   : 1;
+}
+
+.modal-right__delete {
+	position         : absolute;
+	top              : 0;
+	right            : 0;
+
+	padding          : 10px;
+	@include size(8px, 8px);
+
+	cursor           : pointer;
+	cursor           : pointer;
+	transform        : translate(5px, -5px);
+
+	border           : none;
+	background-color : transparent;
+
+	&::before,
+	&::after {
+		@include pseudo;
+		top        : 9px;
+		right      : 2px;
+
+		@include size(10px, 1px);
+
+		transform  : rotate(45deg);
+
+		background : $accent-background;
+	}
+
+	&::after {
+		transform : rotate(135deg);
+	}
+
+	&:hover,
+	&:focus {
+		transform: translate(8px, -6px);
+	}
+
+	&:hover::before,
+	&:hover::after,
+	&:focus::before,
+	&:focus::after {
+		top        : 9px;
+		right      : 4px;
+
+		@include size(13px, 2px);
+
+		box-shadow : $button-shadow;
+	}
+}
+
+.modal-right__add-cart {
+	margin-top     : auto;
+	margin-bottom  : 4px;
+	padding        : 3.5px;
+	box-sizing     : border-box;
+	width          : 120px;
+
+	@include font($accent-font-family, 0.533em, 300, 1.5, $main-background, $accent-background);
+
+	cursor         : pointer;
+	text-align     : center;
+	letter-spacing : 0.9px;
+
+	border         : 1px solid $accent-background;
+
+	align-self     : flex-start;
+
+	&:hover,
+	&:focus {
+		letter-spacing : 1.1px;
+
+		box-shadow     : $button-shadow;
+	}
+}
+
+.modal-right__text {
+	margin         : 0;
+
+	@include font($accent-font-family, 1em, 300, 1.47, $main-text-color, transparent);
+
+	letter-spacing : 0.9px;
+
+	&:last-child {
+		margin-bottom: 2px;
+	}
+}
+
+.modal-right__button {
+	margin-top     : -2px;
+	padding        : 7px;
+	width          : 171px;
+
+	@include font($accent-font-family, 1em, normal, 1.5, $modal-text-color, $accent-background);
+
+	text-align     : center;
+	text-transform : uppercase;
+
+	align-self     : flex-start;
+}
+
+.modal-right__close {
+	position   : absolute;
+	top        : 0;
+	left       : 0;
+
+	@include size(40px, 100vh);
+
+	cursor     : pointer;
+
+	border     : none;
+	background : transparent;
+
+	&::before,
+	&::after {
+		@include pseudo;
+		top           : 50%;
+		left          : 1px;
+
+		margin-top    : 18px;
+		@include size(40px, 2px);
+
+		transition    : .3;
+		transform     : rotate(115deg);
+
+		border-radius : 2px;
+		background    : #333333;
+	}
+
+	&::after {
+		margin-top : -18px;
+
+		transform  : rotate(65deg);
+	}
+
+	&:hover {
+		left       : -1px;
+
+		background : hsla(0, 0%, 60%, .15);
+		box-shadow : 0 0 2px hsla(0, 0%, 60%, .15);
+	}
+
+	&:hover::before,
+	&:hover::after {
+		@include size(42px, 4px);
+
+		border-radius : 2px;
+	}
+}
+
+.modal-right__title--cart {
+	margin: 4px 0 23px;
+}
+
+.modal-right--cart {
+	.modal-right__text:first-of-type {
+		margin: auto 0 0;
+	}
+	.modal-right__text:last-child {
+		margin: 0;
+	}
+}
+
+.modal-right__amount-payable--toggle {
+	display: none;
+}
+
+.modal-right__amount-payable {
+	@include font($accent-font-family, 1.2em, normal, 1.33, $main-text-color, transparent);
+	margin: 15px 0;
+}
+
+.modal-right__button-cart {
+	width      : 348px;
+	padding    : 17px;
+	text-align : center;
+	border     : none;
+	margin     : 0 auto 10px;
+	@include font($accent-font-family, 1.2em, normal, 1.50, $main-text-color, $main-background);
+	box-shadow : 1px 1px 1px #dddddd;
+	box-sizing : border-box;
+}
+
+.modal-right__button-cart:first-of-type {
+	margin-top: 34px;
+}
+
+.modal-right--page {
+	position   : relative;
+	top        : auto;
+	left       : auto;
+
+	display    : flex;
+
+	margin     : 0 auto;
+	padding    : 30px 30px 60px;
+	@include size(328+60px, auto);
+
+	transform  : translateX(0%);
+
+	border-top : 1px solid #000000;
+}
+
+.modal-right__title--page {
+	text-align: center;
+}
+
+.modal-right__item--page {
+	margin: 0 auto 14px;
+}
+
+.modal-right__close--page {
+	display: none;
+}
+
+.modal-right__button--page {
+	margin: 20px auto 0;
+}

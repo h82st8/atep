@@ -1,0 +1,28 @@
+.about-us {
+    padding-top: 67px;
+    padding-bottom: 87px;
+
+    .about-us__preview {
+        @include flex (row, space-between);
+        margin-bottom: 55px;
+
+        .about-us__img {
+            margin-right: 110px;
+        }
+
+        .about-us_text {
+            @include font($main-font-family, 23px, normal, 31px, $main-text-color, none);
+            text-align: center;
+
+            .about-us__title {
+                font-size: 43px;
+                line-height: 57px;
+                font-weight: normal;
+            }
+        }
+    }
+
+    .about-us__gallery {
+        @include flex (row, space-between)
+    }
+}

@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Good</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://www.google.com/recaptcha/api.js"></script>
+  </head>
+  <body class="no-js">
+    <header class="header">
+      <div class="header__wrapper main-wrapper"><a class="accessible header__accessible" href="#main-content">Перейти к основному контенту</a>
+        <div class="header__item header__item--logo">
+              <div class="logo"><a class="logo__link" aria-label="На главную страницу" href="index.html">A<span>tep</span></a>
+              </div>
+        </div>
+        <nav class="header__item main-nav">
+          <div class="main-nav__buttons main-nav__toggle">
+            <button class="main-nav__button-menu"><span class="visually-hidden">Меню</span></button>
+            <button class="main-nav__button-close"><span class="visually-hidden">Закрыть меню</span></button>
+          </div>
+          <ul>
+            <li class="main-nav__item"><a class="main-nav__link" aria-label="Главная" href="index.html"><span>Г</span><span>л</span><span>а</span><span>в</span><span>н</span><span>а</span><span>я</span></a>
+            </li>
+            <li class="main-nav__item main-nav__item--submenu"><span class="main-nav__submenu--mobile link-her arrow"></span><a class="main-nav__link" aria-label="Для нее" href="cathalog.html"><span>Д</span><span>л</span><span>я</span><span> </span><span>н</span><span>е</span><span>е</span><span class="arrow"></span></a>
+              <div class="main-nav__submenu-wrapper main-nav__submenu-wrapper--her">
+                <div class="main-nav__submenu"><a class="accessible main-nav__submenu__accessible" href="#for-him">Перейти к товарам для него</a>
+                  <ul class="main-nav__column">
+                    <li class="main-nav__submenu-item"><a class="main-nav__submenu-link main-nav__submenu-link--title" href="#">Одежда</a>
+                    </li>
+                    <li class="main-nav__submenu-item"><a class="main-nav__submenu-link" href="#">Платья</a>
+                    </li>
+                    <li class="main-nav__submenu-item"><a class="main-nav__submenu-link" href="#">Блузки</a>
+                    </li>
+                    <li class="main-nav__submenu-item"><a class="main-nav__submenu-link" href="#">Футболки</a>
+                    </li>
+                    <li class="main-nav__submenu-item"><a class="main-nav__submenu-link" href="#">Брюки</a>
+                    </li>
+                    <li class="main-nav__submenu-item"><a class="main-nav__submenu-link" href="#">Юбки</a>
+                    </li>
+                  </ul>
+                  <ul class="main-nav__column">
+                    <li class="main-nav__submenu-item"><a class="main-nav__submenu-link main-nav__submenu-link--title" href="#">Обувь</a>
+                    </li>
+                    <li class="main-nav__submenu-item"><a class="main-nav__submenu-link" href="#">Кроссовки</a>
+                    </li>
+                    <li class="main-nav__submenu-item"><a class="main-nav__submenu-link" href="#">Кеды</a>
+                    </li>
+                    <li class="main-nav__submenu-item"><a class="main-nav__submenu-link" href="#">Туфли</a>
+                    </li>
+                    <li class="main-nav__submenu-item"><a class="main-nav__submenu-link" href="#">Балетки</a>
+                    </li>
+                    <li class="main-nav__submenu-item"><a class="main-nav__submenu-link" href="#">Сланцы</a>
+                    </li>
+                  </ul>
+                  <ul class="main-nav__column">
+                    <li class="main-nav__submenu-item"><a class="main-nav__submenu-link main-nav__submenu-link--title" href="#">Аксессуары</a>
+                    </li>
+                    <li class="main-nav__submenu-item"><a class="main-nav__submenu-link" href="#">Часы</a>
+                    </li>
+                    <li class="main-nav__submenu-item"><a class="main-nav__submenu-link" href="#">Серьги</a>
+                    </li>
+                    <li class="main-nav__submenu-item"><a class="main-nav__submenu-link" href="#">Кольца</a>
+                    </li>
+                    <li class="main-nav__submenu-item"><a class="main-nav__submenu-link" href="#">Ожерелье</a>
+                    </li>
+                    <li class="main-nav__submenu-item"><a class="main-nav__submenu-link" href="#">Поло</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </li>
+            <li class="main-nav__item main-nav__item--submenu"><span class="main-nav__submenu--mobile link-him arrow"></span><a class="main-nav__link" id="for-him" aria-label="Для него" href="cathalog.html"><span>Д</span><span>л</span><span>я</span><span> </span><span>н</span><span>е</span><span>г</span><span>о</span><span class="arrow"></span></a>
+              <div class="main-nav__submenu-wrapper main-nav__submenu-wrapper--him">
+                <div class="main-nav__submenu"><a class="accessible main-nav__submenu__accessible" href="#lookbook">Перейти к Lookbook</a>
+                  <ul class="main-nav__column">
+                    <li class="main-nav__submenu-item"><a class="main-nav__submenu-link main-nav__submenu-link--title" href="#">Одежда</a>
+                    </li>
+                    <li class="main-nav__submenu-item"><a class="main-nav__submenu-link" href="#">Куртки</a>
+                    </li>
+                    <li class="main-nav__submenu-item"><a class="main-nav__submenu-link" href="#">Рубашки</a>
+                    </li>
+                    <li class="main-nav__submenu-item"><a class="main-nav__submenu-link" href="#">Футболки</a>
+                    </li>
+                    <li class="main-nav__submenu-item"><a class="main-nav__submenu-link" href="#">Брюки</a>
+                    </li>
+                    <li class="main-nav__submenu-item"><a class="main-nav__submenu-link" href="#">Шорты</a>
+                    </li>
+                  </ul>
+                  <ul class="main-nav__column">
+                    <li class="main-nav__submenu-item"><a class="main-nav__submenu-link main-nav__submenu-link--title" href="#">Обувь</a>
+                    </li>
+                    <li class="main-nav__submenu-item"><a class="main-nav__submenu-link" href="#">Кроссовки</a>
+                    </li>
+                    <li class="main-nav__submenu-item"><a class="main-nav__submenu-link" href="#">Кеды</a>
+                    </li>
+                    <li class="main-nav__submenu-item"><a class="main-nav__submenu-link" href="#">Туфли</a>
+                    </li>
+                    <li class="main-nav__submenu-item"><a class="main-nav__submenu-link" href="#">Ботинки</a>
+                    </li>
+                    <li class="main-nav__submenu-item"><a class="main-nav__submenu-link" href="#">Сланцы</a>
+                    </li>
+                  </ul>
+                  <ul class="main-nav__column">
+                    <li class="main-nav__submenu-item"><a class="main-nav__submenu-link main-nav__submenu-link--title" href="#">Аксессуары</a>
+                    </li>
+                    <li class="main-nav__submenu-item"><a class="main-nav__submenu-link" href="#">Часы</a>
+                    </li>
+                    <li class="main-nav__submenu-item"><a class="main-nav__submenu-link" href="#">Ремни</a>
+                    </li>
+                    <li class="main-nav__submenu-item"><a class="main-nav__submenu-link" href="#">Кольца</a>
+                    </li>
+                    <li class="main-nav__submenu-item"><a class="main-nav__submenu-link" href="#">Перчатки</a>
+                    </li>
+                    <li class="main-nav__submenu-item"><a class="main-nav__submenu-link" href="#">Фуражки</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </li>
+                    <li class="main-nav__item"><a class="main-nav__link" id="lookbook" aria-label="Lookbook" href="lookbook.html"><span>L</span><span>o</span><span>o</span><span>k</span><span>b</span><span>o</span><span>o</span><span>k</span></a>
+                    </li>
+                    <li class="main-nav__item"><a class="main-nav__link" aria-label="Blog" href="blog.html"><span>B</span><span>l</span><span>o</span><span>g</span></a>
+                    </li>
+          </ul>
+        </nav>
+        <ul class="header__item header__item--user-menu user-menu">
+          <li class="user-menu__item user-menu__item--favorites"><a class="user-menu__link link-favorites" href="favorites.html"><span class="visually-hidden">Избранное</span>
+                      <svg class="user-menu__icon" width="25" height="25">
+                        <use xlink:href="img/sprite.svg#icon-favorites"></use>
+                      </svg></a>
+          </li>
+          <li class="user-menu__item user-menu__item--cart"><a class="user-menu__link link-cart" href="cart.html"><span class="visually-hidden">В вашей корзине&ensp;</span><span class="user-menu__number-purchases">0</span><span class="visually-hidden">&ensp;товаров</span>
+              <svg class="user-menu__icon" width="25" height="25">
+                <use xlink:href="img/sprite.svg#icon-cart"></use>
+              </svg></a>
+          </li>
+          <li class="user-menu__item user-menu__item--user"><a class="user-menu__link link-login" href="login.html"><span class="visually-hidden">Войти как пользователь</span>
+                      <svg class="user-menu__icon" width="25" height="25">
+                        <use xlink:href="img/sprite.svg#icon-user"></use>
+                      </svg></a>
+          </li>
+          <li class="user-menu__item user-menu__item--search user-menu--toggle"><a class="user-menu__link link-search" href="search.html"><span class="visually-hidden">Поиск</span>
+                      <svg class="user-menu__icon" width="25" height="25">
+                        <use xlink:href="img/sprite.svg#icon-search"></use>
+                      </svg></a>
+          </li>
+          <li class="user-menu__item user-menu__item--search-close">
+            <button class="user-menu__search-close"><span class="visually-hidden">Закрыть поиск</span></button>
+          </li>
+        </ul>
+      </div>
+    </header>
+    <div class="header__shadow"></div>
+    <main class="main-content">
+      <section class="good_card good_margin">
+        <div class="good_card__pic_wrap"><img class="good_card__pic good_card__pic_small" src="img/wx1/image3.1_desk.webp"><img class="good_card__pic good_card__pic_small" src="img/wx1/image3.1_desk.webp"><img class="good_card__pic good_card__pic_small" src="img/wx1/image3.1_desk.webp"><img class="good_card__pic good_card__pic_big" src="img/wx2/image3.1_desk.webp"></div>
+        <div class="good_card__description">
+          <div class="title_price">
+            <h1 class="good_card__title">Gold Plated Desk Lantern Lamp</h1><span class="good_card__price">$112.00</span>
+          </div>
+          <div class="good_card__rating">
+            <svg width="18" height="18">
+              <use xlink:href="img/star.svg#icon-rating"></use>
+            </svg>
+            <svg width="18" height="18">
+              <use xlink:href="img/star.svg#icon-rating"></use>
+            </svg>
+            <svg width="18" height="18">
+              <use xlink:href="img/star.svg#icon-rating"></use>
+            </svg>
+            <svg width="18" height="18">
+              <use xlink:href="img/star.svg#icon-rating"></use>
+            </svg>
+            <svg width="18" height="18">
+              <use xlink:href="img/star.svg#icon-rating_none"></use>
+            </svg>
+          </div>
+          <p class="good_card__text">On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms.</p>
+          <div class="good_card__choose_color"><span class="good_card__choose_txt">Выбрать цвет</span>
+            <div class="good_card__colors">
+              <button class="good_card__color color_red"></button>
+              <button class="good_card__color color_purple"></button>
+              <button class="good_card__color color_pink"></button>
+              <button class="good_card__color color_orange"></button>
+            </div>
+          </div>
+          <div class="good_card__choose_size"><span class="good_card__choose_txt">Выбрать размер</span>
+            <div class="good_card__sizes">
+              <button class="good_card__size size_xs">xs</button>
+              <button class="good_card__size size_s">s</button>
+              <button class="good_card__size size_m">m</button>
+              <button class="good_card__size size_l">l</button>
+            </div>
+          </div>
+          <div class="good_card__order">
+            <button class="order_btn btn_basket">В корзину</button>
+            <button class="order_btn btn_favorite">
+              <svg width="25" height="28" viewBox="-2 -6 25 25">
+                <use xlink:href="img/sprite.svg#icon-favorites"></use>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </section>
+      <section class="good_info good_margin">
+        <div class="good_info__btns">
+          <button class="active good_info__btn" data-tab="0">Описание</button>
+          <button class="good_info__btn" data-tab="1">Комментарии</button>
+          <button class="good_info__btn" data-tab="2">Оставить комментарий</button>
+        </div>
+        <div class="good_info__content">
+          <div class="good_info__details tab-block">
+            <h2 class="good_info__title">Details</h2>
+            <p class="good_info__txt">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis noexercit ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id.
+              
+            </p>
+            <h2 class="good_info__title">Features</h2>
+            <p class="good_info__txt">
+              Duis aute irure dolor in reprehenderit in voluptate velit esse
+              <br>
+              Irure dolor in reprehenderit in voluptate velit esse
+              <br>
+              Sed do eiusmod tempor incididunt ut labore et
+              <br>
+              Nisi ut aliquip ex ea commodo consequat.
+            </p>
+          </div>
+          <div class="good_info__review_wrap tab-block">
+            <div class="good_info__review"><img class="review_avatar" src="../img/review_avatar.svg">
+              <div class="review_rating">
+                <svg width="18" height="18">
+                  <use xlink:href="img/star.svg#icon-rating"></use>
+                </svg>
+                <svg width="18" height="18">
+                  <use xlink:href="img/star.svg#icon-rating"></use>
+                </svg>
+                <svg width="18" height="18">
+                  <use xlink:href="img/star.svg#icon-rating"></use>
+                </svg>
+                <svg width="18" height="18">
+                  <use xlink:href="img/star.svg#icon-rating"></use>
+                </svg>
+                <svg width="18" height="18">
+                  <use xlink:href="img/star.svg#icon-rating_none"></use>
+                </svg>
+              </div>
+              <p class="review_txt">
+                Praesent volutpat ut nisl in hendrerit. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Etiam porttitor, lacus in luctus molestie
+                
+              </p><span class="review_name">Roche Petite - Fashion Designer</span>
+            </div>
+            <div class="good_info__review"><img class="review_avatar" src="../img/review_avatar.svg">
+              <div class="review_rating">
+                <svg width="18" height="18">
+                  <use xlink:href="img/star.svg#icon-rating"></use>
+                </svg>
+                <svg width="18" height="18">
+                  <use xlink:href="img/star.svg#icon-rating"></use>
+                </svg>
+                <svg width="18" height="18">
+                  <use xlink:href="img/star.svg#icon-rating_none"></use>
+                </svg>
+                <svg width="18" height="18">
+                  <use xlink:href="img/star.svg#icon-rating_none"></use>
+                </svg>
+                <svg width="18" height="18">
+                  <use xlink:href="img/star.svg#icon-rating_none"></use>
+                </svg>
+              </div>
+              <p class="review_txt">
+                Praesent volutpat ut nisl in hendrerit. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Etiam porttitor, lacus in luctus molestie
+                
+              </p><span class="review_name">Roche Petite - Fashion Designer</span>
+            </div>
+            <div class="good_info__review"><img class="review_avatar" src="../img/review_avatar.svg">
+              <div class="review_rating">
+                <svg width="18" height="18">
+                  <use xlink:href="img/star.svg#icon-rating"></use>
+                </svg>
+                <svg width="18" height="18">
+                  <use xlink:href="img/star.svg#icon-rating"></use>
+                </svg>
+                <svg width="18" height="18">
+                  <use xlink:href="img/star.svg#icon-rating"></use>
+                </svg>
+                <svg width="18" height="18">
+                  <use xlink:href="img/star.svg#icon-rating"></use>
+                </svg>
+                <svg width="18" height="18">
+                  <use xlink:href="img/star.svg#icon-rating"></use>
+                </svg>
+              </div>
+              <p class="review_txt">
+                Praesent volutpat ut nisl in hendrerit. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Etiam porttitor, lacus in luctus molestie
+                
+              </p><span class="review_name">Roche Petite - Fashion Designer</span>
+            </div>
+          </div>
+          <div class="good_info__form_wrap tab-block">
+            <p class="good_info__form_txt">
+              Be the first to review “Gold Plated Desk Lantern Lamp”
+              <br>
+              Your E-mail Address Will not be published. Required field are marked *
+            </p><span class="good_info__form_txt">Your rating</span>
+            <div class="form__rating">
+              <svg width="18" height="18">
+                <use xlink:href="img/star.svg#icon-rating"></use>
+              </svg>
+              <svg width="18" height="18">
+                <use xlink:href="img/star.svg#icon-rating"></use>
+              </svg>
+              <svg width="18" height="18">
+                <use xlink:href="img/star.svg#icon-rating"></use>
+              </svg>
+              <svg width="18" height="18">
+                <use xlink:href="img/star.svg#icon-rating_none"></use>
+              </svg>
+              <svg width="18" height="18">
+                <use xlink:href="img/star.svg#icon-rating_none"></use>
+              </svg>
+            </div>
+            <form class="good_info__form">
+              <div class="good_info__form_review good_info__form_box"><span class="good_info__form_txt">Your Review *</span>
+                <textarea class="good_info__form_textarea good_info__form_input" rows="20" required placeholder="Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты."></textarea>
+              </div>
+              <div class="good_info__form_name good_info__form_box"><span class="good_info__form_txt">Name*</span>
+                <input class="good_info__form_name_input good_info__form_input" type="text" required placeholder="Анна Тепликова">
+              </div>
+              <div class="good_info__form_email good_info__form_box"><span class="good_info__form_txt">E-mail*</span>
+                <input class="good_info__form_email_input good_info__form_input" type="text" required placeholder="atep@gmail.com">
+              </div>
+              <div class="good_info__form_btn_wrap">
+                <input class="good_info__form_btn" type="submit" value="Добавить коментарий">
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="footer__wrapper">
+        <nav class="footer__item footer__item--menu">
+          <ul class="footer__nav-menu">
+            <li class="footer__nav-item"><a class="main-nav__link main-nav__link--footer" href="#"><span>A</span><span>b</span><span>o</span><span>u</span><span>t</span><span> </span><span>u</span><span>s</span></a></li>
+                <li class="footer__nav-item"><a class="main-nav__link main-nav__link--footer" aria-label="Lookbook" href="lookbook.html"><span>L</span><span>o</span><span>o</span><span>k</span><span>b</span><span>o</span><span>o</span><span>k</span></a>
+                </li>
+                <li class="footer__nav-item"><a class="main-nav__link main-nav__link--footer" aria-label="Blog" href="blog.html"><span>B</span><span>l</span><span>o</span><span>g</span></a>
+                </li>
+            <li class="footer__nav-item"><a class="main-nav__link main-nav__link--footer" href="tel:8999999999" aria-label="Позвонить"><span>T</span><span>e</span><span>l</span><span>.</span><span> </span><span>8</span><span>9</span><span>9</span><span>9</span><span>9</span><span>9</span><span>9</span><span>9</span><span>9</span><span>9</span></a></li>
+          </ul>
+        </nav>
+        <div class="footer__item footer__item--logo">
+              <div class="logo"><a class="logo__link" aria-label="На главную страницу" href="index.html">A<span>tep</span></a>
+              </div>
+        </div>
+        <div class="footer__item footer__item--slogan">On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms.</div>
+        <div class="footer__item">
+          <form class="footer__form" id="form-follow" method="post" action="#" name="form-follow">
+            <label class="footer__form-label" for="form-follow-email">Follow us</label>
+            <input class="footer__form-input" id="form-follow-email" type="email" onkeyup="checkFooterForm();" name="email" maxlength="30" placeholder="Email...">
+            <input class="footer__form-button form-button" id="submit-form-follow" type="submit" name="submit_form-follow" value="Подписаться">
+          </form>
+        </div>
+        <div class="footer__item footer__item--info">@ 2019 ATEP. ® All Right Reserved</div>
+      </div>
+    </footer>
+    <div class="modal-wrapper"></div>
+    <section class="modal">
+          <picture class="modal__article-photo">
+            <source type="image/webp" media="(min-width: 1220px)" srcset="img/wx1/modal-favorites_desk.webp 1x, img/wx2/modal-favorites_desk.webp 2x, img/wx3/modal-favorites_desk.webp 3x">
+            <source type="image/webp" media="(min-width: 768px)" srcset="img/wx1/modal-favorites_tab.webp 1x, img/wx2/modal-favorites_tab.webp 2x, img/wx3/modal-favorites_tab.webp 3x">
+            <source type="image/webp" srcset="img/wx1/modal-favorites_mob.webp 1x, img/wx2/modal-favorites_mob.webp 2x, img/wx3/modal-favorites_mob.webp 3x">
+            <source media="(min-width: 1220px)" srcset="img/modal-favorites_desk.jpg">
+            <source media="(min-width: 768px)" srcset="img/modal-favorites_tab.jpg"><img class="image" src="img/modal-favorites_mob.jpg">
+          </picture>
+      <form class="modal__form modal__form--favorites-login" action="" method="post" name="login-form">
+        <h3 class="modal__title">Вход</h3>
+        <label class="modal__label visually-hidden" for="login-email">Введите email</label>
+        <input class="modal__input" id="login-email" type="email" name="login" placeholder="Email" required="">
+        <label class="modal__label visually-hidden" for="login-password">Введите пароль</label>
+        <input class="modal__input" id="login-password" name="pasword" type="password" pattern="(?=.*d)(?=.*[a-z])(?=.*[A-Z]).{8,}" placeholder="Password" required="">
+        <div class="modal__input modal__input--captcha g-recaptcha" id="recaptcha" data-sitekey="6LeBMLQUAAAAAMpIkzxAeI6yHx-dgA7k6XZaSZ2U"></div>
+        <div class="modal__label modal__label--captchaError"></div>
+        <div class="modal__buttons">
+          <div class="modal__button-group">
+            <input class="modal__button modal__button--login form-button" id="submit-login" type="submit" name="submit_login-login" value="Войти"><a class="modal__link link-recovery" href="recovery-password.html">Забыли пароль?</a>
+          </div><span>или</span><a class="modal__button form-button" href="#">Подписаться</a>
+        </div>
+      </form>
+    </section>
+    <section class="modal modal--recovery">
+      <form class="modal__form" action="" method="post" name="password-recovery-form">
+        <h3 class="modal__title modal__title--recovery">Восстановление пароля</h3>
+        <label class="modal__label"><span class="modal__text">Введите ваш email адрес...</span>
+          <input class="modal__input modal__input--recovery" id="email-recovery" type="email" name="login-recovery" placeholder="Email..." required="">
+        </label>
+        <p class="modal__text">Укажите адрес эл. почты, который вы использовали при оформлении заказов в ATEP. Мы вышлем вам инструкцию по восстановлению пароля.</p>
+        <div class="modal__buttons modal__buttons--recovery">
+          <input class="modal__button modal__button--recovery form-button" type="submit" value="Восстановить пароль"><a class="modal__button form-button link-login modal__button--recovery" href="login.html">Вспомнили пароль?</a>
+        </div>
+      </form>
+    </section>
+    <section class="modal-right modal-right--favorites">
+      <h3 class="modal-right__title">Избранное</h3>
+      <div class="modal-right__item">
+            <picture class="modal-right__photo">
+              <source type="image/webp" media="(min-width: 1220px)" srcset="img/wx1/modal-favorites-img_2_desk.webp 1x, img/wx2/modal-favorites-img_2_desk.webp 2x, img/wx3/modal-favorites-img_2_desk.webp 3x">
+              <source type="image/webp" media="(min-width: 768px)" srcset="img/wx1/modal-favorites-img_2_tab.webp 1x, img/wx2/modal-favorites-img_2_tab.webp 2x, img/wx3/modal-favorites-img_2_tab.webp 3x">
+              <source type="image/webp" srcset="img/wx1/modal-favorites-img_2_mob.webp 1x, img/wx2/modal-favorites-img_2_mob.webp 2x, img/wx3/modal-favorites-img_2_mob.webp 3x">
+              <source media="(min-width: 1220px)" srcset="img/modal-favorites-img_2_desk.jpg">
+              <source media="(min-width: 768px)" srcset="img/modal-favorites-img_2_tab.jpg"><img class="image" src="img/modal-favorites-img_2_mob.jpg">
+            </picture>
+        <div class="modal-right__content">
+          <button class="modal-right__delete"><span class="visually-hidden">Удалить из избранного</span></button>
+          <button class="modal-right__add-cart">Добавить в корзину</button>
+          <p class="modal-right__text">Boys light blue jacket</p>
+          <p class="modal-right__text">1 × <span class="modal-right__price">$35.99</span></p>
+        </div>
+      </div>
+      <div class="modal-right__item">
+            <picture class="modal-right__photo">
+              <source type="image/webp" media="(min-width: 1220px)" srcset="img/wx1/modal-favorites-img_2_desk.webp 1x, img/wx2/modal-favorites-img_2_desk.webp 2x, img/wx3/modal-favorites-img_2_desk.webp 3x">
+              <source type="image/webp" media="(min-width: 768px)" srcset="img/wx1/modal-favorites-img_2_tab.webp 1x, img/wx2/modal-favorites-img_2_tab.webp 2x, img/wx3/modal-favorites-img_2_tab.webp 3x">
+              <source type="image/webp" srcset="img/wx1/modal-favorites-img_2_mob.webp 1x, img/wx2/modal-favorites-img_2_mob.webp 2x, img/wx3/modal-favorites-img_2_mob.webp 3x">
+              <source media="(min-width: 1220px)" srcset="img/modal-favorites-img_2_desk.jpg">
+              <source media="(min-width: 768px)" srcset="img/modal-favorites-img_2_tab.jpg"><img class="image" src="img/modal-favorites-img_2_mob.jpg">
+            </picture>
+        <div class="modal-right__content">
+          <button class="modal-right__delete"><span class="visually-hidden">Удалить из избранного</span></button>
+          <button class="modal-right__add-cart">Добавить в корзину</button>
+          <p class="modal-right__text">Boys light blue jacket</p>
+          <p class="modal-right__text">1 × <span class="modal-right__price">$35.99</span></p>
+        </div>
+      </div>
+      <div class="modal-right__item">
+            <picture class="modal-right__photo">
+              <source type="image/webp" media="(min-width: 1220px)" srcset="img/wx1/modal-favorites-img_2_desk.webp 1x, img/wx2/modal-favorites-img_2_desk.webp 2x, img/wx3/modal-favorites-img_2_desk.webp 3x">
+              <source type="image/webp" media="(min-width: 768px)" srcset="img/wx1/modal-favorites-img_2_tab.webp 1x, img/wx2/modal-favorites-img_2_tab.webp 2x, img/wx3/modal-favorites-img_2_tab.webp 3x">
+              <source type="image/webp" srcset="img/wx1/modal-favorites-img_2_mob.webp 1x, img/wx2/modal-favorites-img_2_mob.webp 2x, img/wx3/modal-favorites-img_2_mob.webp 3x">
+              <source media="(min-width: 1220px)" srcset="img/modal-favorites-img_2_desk.jpg">
+              <source media="(min-width: 768px)" srcset="img/modal-favorites-img_2_tab.jpg"><img class="image" src="img/modal-favorites-img_2_mob.jpg">
+            </picture>
+        <div class="modal-right__content">
+          <button class="modal-right__delete"><span class="visually-hidden">Удалить из избранного</span></button>
+          <button class="modal-right__add-cart">Добавить в корзину</button>
+          <p class="modal-right__text">Boys light blue jacket</p>
+          <p class="modal-right__text">1 × <span class="modal-right__price">$35.99</span></p>
+        </div>
+      </div><a class="modal-right__button form-button" href="lookbook.html">Lookbook</a>
+      <button class="modal-right__close"><span class="visually-hidden">Выйти из избранного</span></button>
+    </section>
+    <section class="modal-right modal-right--cart">
+      <h3 class="modal-right__title modal-right__title--cart">Корзина</h3>
+      <div class="modal-right__item">
+            <picture class="modal-right__photo">
+              <source type="image/webp" media="(min-width: 1220px)" srcset="img/wx1/modal-favorites-img_2_desk.webp 1x, img/wx2/modal-favorites-img_2_desk.webp 2x, img/wx3/modal-favorites-img_2_desk.webp 3x">
+              <source type="image/webp" media="(min-width: 768px)" srcset="img/wx1/modal-favorites-img_2_tab.webp 1x, img/wx2/modal-favorites-img_2_tab.webp 2x, img/wx3/modal-favorites-img_2_tab.webp 3x">
+              <source type="image/webp" srcset="img/wx1/modal-favorites-img_2_mob.webp 1x, img/wx2/modal-favorites-img_2_mob.webp 2x, img/wx3/modal-favorites-img_2_mob.webp 3x">
+              <source media="(min-width: 1220px)" srcset="img/modal-favorites-img_2_desk.jpg">
+              <source media="(min-width: 768px)" srcset="img/modal-favorites-img_2_tab.jpg"><img class="image" src="img/modal-favorites-img_2_mob.jpg">
+            </picture>
+        <div class="modal-right__content">
+          <button class="modal-right__delete"></button><span class="visually-hidden">Удалить из корзины</span>
+          <p class="modal-right__text">Boys light blue jacket</p>
+          <p class="modal-right__text">1 × <span class="modal-right__price">$35.99</span></p>
+        </div>
+      </div>
+      <div class="modal-right__item">
+            <picture class="modal-right__photo">
+              <source type="image/webp" media="(min-width: 1220px)" srcset="img/wx1/modal-favorites-img_2_desk.webp 1x, img/wx2/modal-favorites-img_2_desk.webp 2x, img/wx3/modal-favorites-img_2_desk.webp 3x">
+              <source type="image/webp" media="(min-width: 768px)" srcset="img/wx1/modal-favorites-img_2_tab.webp 1x, img/wx2/modal-favorites-img_2_tab.webp 2x, img/wx3/modal-favorites-img_2_tab.webp 3x">
+              <source type="image/webp" srcset="img/wx1/modal-favorites-img_2_mob.webp 1x, img/wx2/modal-favorites-img_2_mob.webp 2x, img/wx3/modal-favorites-img_2_mob.webp 3x">
+              <source media="(min-width: 1220px)" srcset="img/modal-favorites-img_2_desk.jpg">
+              <source media="(min-width: 768px)" srcset="img/modal-favorites-img_2_tab.jpg"><img class="image" src="img/modal-favorites-img_2_mob.jpg">
+            </picture>
+        <div class="modal-right__content">
+          <button class="modal-right__delete"></button><span class="visually-hidden">Удалить из корзины</span>
+          <p class="modal-right__text">Boys light blue jacket</p>
+          <p class="modal-right__text">1 × <span class="modal-right__price">$35.99</span></p>
+        </div>
+      </div>
+      <div class="modal-right__item">
+            <picture class="modal-right__photo">
+              <source type="image/webp" media="(min-width: 1220px)" srcset="img/wx1/modal-favorites-img_2_desk.webp 1x, img/wx2/modal-favorites-img_2_desk.webp 2x, img/wx3/modal-favorites-img_2_desk.webp 3x">
+              <source type="image/webp" media="(min-width: 768px)" srcset="img/wx1/modal-favorites-img_2_tab.webp 1x, img/wx2/modal-favorites-img_2_tab.webp 2x, img/wx3/modal-favorites-img_2_tab.webp 3x">
+              <source type="image/webp" srcset="img/wx1/modal-favorites-img_2_mob.webp 1x, img/wx2/modal-favorites-img_2_mob.webp 2x, img/wx3/modal-favorites-img_2_mob.webp 3x">
+              <source media="(min-width: 1220px)" srcset="img/modal-favorites-img_2_desk.jpg">
+              <source media="(min-width: 768px)" srcset="img/modal-favorites-img_2_tab.jpg"><img class="image" src="img/modal-favorites-img_2_mob.jpg">
+            </picture>
+        <div class="modal-right__content">
+          <button class="modal-right__delete"></button><span class="visually-hidden">Удалить из корзины</span>
+          <p class="modal-right__text">Boys light blue jacket</p>
+          <p class="modal-right__text">1 × <span class="modal-right__price">$35.99</span></p>
+        </div>
+      </div>
+      <p class="modal-right__amount-payable-empty modal-right__amount-payable--toggle">Ваша корзина пуста</p>
+      <p class="modal-right__amount-payable">Всего:&ensp;<span>$164.97</span></p><a class="modal-right__button-cart form-button" href="cart.html">Посмотреть товары</a><a class="modal-right__button-cart form-button" href="#">Купить сейчас</a>
+      <button class="modal-right__close"><span class="visually-hidden">Выйти из корзины</span></button>
+    </section>
+    <section class="modal-search">
+      <form class="modal-search__form" action="" method="post" name="modal-search-form">
+        <h3 class="modal-search__title">Поиск</h3>
+        <label for="form-search-input"></label>
+        <input class="modal-search__input" id="form-search-input" type="text" name="form-search-input" onkeyup="checkSearchForm();" minlength="3" placeholder="поиск">
+        <input class="modal-search__button" type="submit" value="Искать">
+      </form>
+    </section>
+  </body>
+  <script type="text/javascript" src="js/script.js"></script>
+</html>

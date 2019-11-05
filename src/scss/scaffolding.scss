@@ -1,0 +1,228 @@
+body {
+	@include reset-indent;
+
+	@include font($main-font-family, $main-font-size, normal, $main-line-height, $main-text-color, $main-background);
+}
+
+*:focus {
+	outline       : none;
+	box-shadow    : 0 0 0 2px #ffffff,0 0 5px 3px #3f89bf;
+	z-index       : z('focus');
+	border-radius : 5px;
+}
+
+.modal:focus,
+.modal-right:focus {
+	box-shadow: none;
+}
+
+.main-wrapper {
+	padding: 0 5.8%;
+}
+
+.logo__link {
+	display         : block;
+
+	padding         : 8px 8px 4px;
+
+	@include font(Baskerville Old Face, 2em, normal, 1, #000000, transparent);
+
+	text-decoration : none;
+	letter-spacing  : 0.7px;
+	text-transform  : uppercase;
+}
+
+.logo__link span {
+	color: #ff0000;
+}
+
+.logo {
+	position   : relative;
+
+	&::after {
+		@include pseudo;
+		bottom        : 12.5px;
+		left          : 84px;
+
+		@include size (6px, 6px);
+
+		border-radius : 50%;
+		background    : #ff0000;
+	}
+
+	span {
+		margin-left: -1px;
+	}
+}
+
+@media (min-width: $desktop) {
+
+	.main-wrapper {
+		margin : 0 auto;
+		padding: 0;
+		width  : $main-unit;
+	}
+
+	.logo__link {
+		padding     : 8.5px 25px;
+
+		font-size   : 2.267em;
+		font-weight : 500;
+
+		transform   : scaleX(1.04);
+	}
+
+	.logo {
+		position   : relative;
+
+		&::after {
+			bottom        : 14.5px;
+			left          : 111px;
+
+			@include size (8px, 8px);
+		}
+
+		span {
+			margin-left: -1px;
+		}
+	}
+}
+
+
+
+.visually-hidden {
+	position : absolute !important;
+
+	overflow : hidden;
+	clip     : rect(1px 1px 1px 1px);
+	clip     : rect(1px, 1px, 1px, 1px);
+
+	padding  : 0 !important;
+	width    : 1px !important;
+	height   : 1px !important;
+
+	border   : 0 !important;
+}
+
+.accessible {
+	position        : absolute;
+	top             : auto;
+	z-index         : z('accessible');
+
+	overflow        : hidden;
+
+	@include size(1px, 1px);
+
+	color           : $main-text-color;
+
+	text-decoration : none;
+}
+
+.accessible:focus {
+	top        : 15px;
+	left       : 0;
+	z-index: 2;
+
+	overflow   : auto;
+
+	padding    : 5px;
+	@include size (auto, auto);
+
+	text-align : center;
+	z-index    : z('focus');
+}
+
+.arrow {
+	display: inline-block;
+	position: relative;
+	@include size(7px, 7px);
+
+	&::before,
+	&::after {
+		@include pseudo;
+		left             : 10px;
+		bottom           : 1px;
+
+		@include size(8px, 0.1em);
+
+		transition-delay : .7s;
+		transform        : rotate(45deg);
+
+		background       : $main-text-color;
+	}
+
+	&::after {
+		left     : 15px;
+
+		transform : rotate(-45deg);
+	}
+
+	&:hover::before,
+	&:hover::after {
+		height           : 0.15em;
+
+		transition-delay : .7s;
+	}
+}
+
+.form-button {
+	position        : relative;
+
+	display         : block;
+
+	padding         : 18px 0;
+
+	@include font($main-font-family, 1.067em, 500, $main-line-height, $main-text-color, $main-background);
+
+	transition      : all 300ms ease;
+	text-decoration : none;
+
+	border          : 1px solid $main-text-color;
+	border-radius   : 5px;
+
+	cursor        : pointer;
+
+	&:hover {
+		color          : $modal-text-color;
+
+		letter-spacing : 1.1px;
+
+		background     : $accent-background;
+		box-shadow     : $button-shadow;
+	}
+
+	&:active {
+		letter-spacing: 0;
+
+		box-shadow    : none;
+	}
+}
+
+.modal-wrapper {
+	position   : fixed;
+	top        : 0;
+	right      : 0;
+	bottom     : 0;
+	left       : 0;
+
+	display    : none;
+
+	background : hsla(0, 0%, 0%, .75);
+	z-index    : z('modal-wrapper');
+}
+
+.modal--open {
+	overflow: hidden;
+}
+
+.main-slider {
+	@include size(100%, 695px);
+	@include flex(row, center);
+    align-items: center;
+
+	background: $main-slider-background;
+}
+
+.modal-login {
+	display: none;
+}

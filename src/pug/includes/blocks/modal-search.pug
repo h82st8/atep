@@ -1,0 +1,9 @@
+include ../mixins.pug
+
+section.modal-search
+	form.modal-search__form(action='' method='post' name='modal-search-form')
+		h3.modal-search__title Поиск
+		label(for='form-search-input')
+		input#form-search-input.modal-search__input(type='text' name='form-search-input'
+			onkeyup='checkSearchForm();' minlength='3' placeholder='поиск')
+		input.modal-search__button(type='submit' value='Искать')

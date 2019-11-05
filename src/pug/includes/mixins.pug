@@ -1,0 +1,66 @@
+mixin link(className,name,href='#')
+	a(class=className, href=href)= name
+
+mixin linkArea(className,name,label,href='#')
+	a(class=className, href=href, aria-label=label)= name
+
+mixin picture(className3,nameImage)
+	picture(class=className3)
+		source(type='image/webp' media='(min-width: 1220px)' srcset='img/wx1/' + nameImage + '_desk.webp 1x, img/wx2/' + nameImage + '_desk.webp 2x, img/wx3/' + nameImage + '_desk.webp 3x')
+		source(type='image/webp' media='(min-width: 768px)' srcset='img/wx1/' + nameImage + '_tab.webp 1x, img/wx2/' + nameImage + '_tab.webp 2x, img/wx3/' + nameImage + '_tab.webp 3x')
+		source(type='image/webp' srcset='img/wx1/' + nameImage + '_mob.webp 1x, img/wx2/' + nameImage + '_mob.webp 2x, img/wx3/' + nameImage + '_mob.webp 3x')
+		source(media='(min-width: 1220px)' srcset='img/' + nameImage + '_desk.jpg')
+		source(media='(min-width: 768px)' srcset='img/' + nameImage + '_tab.jpg')
+		img.image(src='img/' + nameImage + '_mob.jpg')
+
+mixin menuLookbookBlog(className1,className2)
+	li(class=className1)
+		if(className1==='main-nav__item')
+			if(lookbookHtml)
+				a#lookbook(class=className2,aria-label='Lookbook')
+					each val in ['L','o','o','k','b','o','o', 'k']
+						span= val
+			else
+				a#lookbook(class=className2,aria-label='Lookbook', href='lookbook.html')
+					each val in ['L','o','o','k','b','o','o', 'k']
+						span= val
+		else
+			if(lookbookHtml)
+				a(class=className2,aria-label='Lookbook')
+					each val in ['L','o','o','k','b','o','o', 'k']
+						span= val
+			else
+				a(class=className2,aria-label='Lookbook', href='lookbook.html')
+					each val in ['L','o','o','k','b','o','o', 'k']
+						span= val
+	li(class=className1)
+		if(blogHtml)
+			a(class=className2,aria-label='Blog')
+				each val in ['B','l','o','g']
+					span= val
+		else
+			a(class=className2,aria-label='Blog', href='blog.html')
+				each val in ['B','l','o','g']
+					span= val
+
+mixin icon(classNameA,nameIcon,srcIcon)
+			a(class='user-menu__link '+classNameA)
+				span.visually-hidden= nameIcon
+				svg.user-menu__icon(width='25' height='25')
+					use(xlink:href='img/sprite.svg#' + srcIcon + '')
+mixin iconLink(classNameA,linkIcon,nameIcon,srcIcon)
+	a(class='user-menu__link '+classNameA href=linkIcon)
+		span.visually-hidden= nameIcon
+		svg.user-menu__icon(width='25' height='25')
+			use(xlink:href='img/sprite.svg#' + srcIcon + '')
+
+mixin logoItem
+	.logo
+		if(indexHtml)
+			a.logo__link(aria-label='На главную страницу')
+				| A
+				span tep
+		else
+			a.logo__link(aria-label='На главную страницу', href='index.html')
+				| A
+				span tep

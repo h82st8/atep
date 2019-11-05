@@ -1,0 +1,27 @@
+.cathegory-nav {
+    width: 645px;
+    height: 82px;
+}
+
+.cathegory-nav__content {
+    padding: 0;
+
+    .cathegory-nav__flex-container {
+        @include flex(row, space-evenly);
+    }
+
+    .cathegory-nav__item {
+        list-style: none;
+
+        .cathegory-nav__link {
+            position: relative;
+            @include font($accent-font-family, 21px, normal, 31px, $main-text-color, none);
+            text-transform: uppercase;
+            text-decoration: none;
+        }
+
+        .cathegory-nav__link_active {
+            @include font($accent-font-family, 21px, normal, 31px, $active-text-color, none);/*change only color*/
+        }
+    }
+}

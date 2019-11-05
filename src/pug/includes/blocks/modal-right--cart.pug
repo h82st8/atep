@@ -1,0 +1,21 @@
+include ../mixins.pug
+
+section.modal-right.modal-right--cart
+	h3.modal-right__title.modal-right__title--cart Корзина
+	each val in ['','','']
+		.modal-right__item
+			+picture('modal-right__photo','modal-favorites-img_2')
+			.modal-right__content
+				button.modal-right__delete
+				span.visually-hidden Удалить из корзины
+				p.modal-right__text Boys light blue jacket
+				p.modal-right__text
+					| 1 × 
+					span.modal-right__price $35.99
+	p.modal-right__amount-payable-empty.modal-right__amount-payable--toggle Ваша корзина пуста
+	p.modal-right__amount-payable Всего:&ensp;
+		span $164.97
+	+link('modal-right__button-cart form-button','Посмотреть товары','cart.html')
+	+link('modal-right__button-cart form-button','Купить сейчас')
+	button.modal-right__close
+		span.visually-hidden Выйти из корзины

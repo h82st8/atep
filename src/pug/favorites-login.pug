@@ -1,0 +1,30 @@
+extends includes/sub-page.pug
+
+block variables
+	- var title = 'Favorites login'
+	- var favoritesLoginHtml = true
+
+block content
+	include includes/blocks/favorites-login--page.pug
+	section#main-content.modal.modal--favorites-login.modal--page
+		picture.modal__article-photo.modal__article-photo--page
+			source(type="image/webp" media="(min-width: 1220px)" srcset="img/wx1/modal-favorites-img_desk.webp 1x, img/wx2/modal-favorites-img_desk.webp 2x, img/wx3/modal-favorites-img_desk.webp 3x")
+			source(type="image/webp" media="(min-width: 768px)" srcset="img/wx1/modal-favorites-img_tab.webp 1x, img/wx2/modal-favorites-img_tab.webp 2x, img/wx3/modal-favorites-img_tab.webp 3x")
+			source(type="image/webp" srcset="img/wx1/modal-favorites-img_mob.webp 1x, img/wx2/modal-favorites-img_mob.webp 2x, img/wx3/modal-favorites-img_mob.webp 3x")
+			source(media="(min-width: 1220px)" srcset="img/modal-favorites-img_desk.jpg")
+			source(media="(min-width: 768px)" srcset="img/modal-favorites-img_tab.jpg")
+			img.image(src="img/modal-favorites-img_mob.jpg" alt="Favorit image")
+		form.modal__form.modal__form--favorites-login.modal__form--page(action="" method="post" name="login-form")
+			h3.modal__title.modal__title--page Вход
+			label.modal__label
+				input#email.modal__input.modal__input--page(type="email" name="login" placeholder="Email" required="")
+			label.modal__label
+				input.modal__input.modal__input--page(name="pasword" type="password" pattern="”(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}”" placeholder="Password" required="")
+			#recaptcha.modal__input.modal__input--captcha.g-recaptcha.modal__input--page(data-sitekey="6LeBMLQUAAAAAMpIkzxAeI6yHx-dgA7k6XZaSZ2U")
+			.modal__label.modal__label--captchaError
+			.modal__buttons
+				.modal__button-group
+					input#submit-login-login.modal__button.modal__button--login.form-button.modal__button--page(type="submit" name="submit_login-login" value="Войти")
+					a.modal__link.link-recovery(href="#") Забыли пароль?
+				span или
+				a.modal__button.form-button.modal__button--page(href="#") Подписаться

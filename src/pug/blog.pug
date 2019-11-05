@@ -1,0 +1,88 @@
+extends includes/template.pug
+
+block variables
+	- var title = 'Blog'
+	- var blogHtml = true
+
+block content
+	section#main-content.market-headers
+		a.accessible.market-headers__accessible(href="#comments") Перейти к комментариям
+		span.market-headers__title
+			| On Salvatore Ferragamo’s New Chapter
+			br
+			|  Homepage Fashion
+			|     On Salvatore Ferragamo’s New Chapter
+	main.main-content.main-wrapper
+		figure.blog-figure
+			picture.blog-figure__image
+				source(type="image/webp" media="(min-width: 1220px)" srcset="img/wx1/image14.1_desk.webp 1x, img/wx2/image14.1_desk.webp 2x, img/wx3/image14.1_desk.webp 3x")
+				source(type="image/webp" media="(min-width: 768px)" srcset="img/wx1/image14.1_tab.webp 1x, img/wx2/image14.1_tab.webp 2x, img/wx3/image14.1_tab.webp 3x")
+				source(type="image/webp" srcset="img/wx1/image14.1_mob.webp 1x, img/wx2/image14.1_mob.webp 2x, img/wx3/image14.1_mob.webp 3x")
+				source(media="(min-width: 1220px)" srcset="img/image14.1_desk.jpg")
+				source(media="(min-width: 768px)" srcset="img/image14.1_tab.jpg")
+				img(src="img/image14.1_mob.jpg" alt="Интерьер" title="Интерьер")
+			figcaption.blog-figure__caption
+			| It Is A Long Established Fact That A Reader Will
+			br
+			|  BY : ADMIN | 3 COMMENTS
+		p.main-content__text-content
+			| Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source.
+		blockquote.main-content__blackquote
+			| Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore d aliqua. Ut enim ad minim veniam,
+		p.main-content__text-content
+			| Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book Contrary to popular belief.
+	section#comments.comments.main-wrapper
+		span.comments__header 3 comments
+		ul.comments__list
+			li.comments__item
+				.comments__item__left
+					picture.comments__user-img
+						source(type="image/webp" media="(min-width: 1220px)" srcset="img/wx1/image15.2_desk.webp 1x, img/wx2/image15.2_desk.webp 2x, img/wx3/image15.2_desk.webp 3x")
+						source(type="image/webp" media="(min-width: 768px)" srcset="img/wx1/image15.2_tab.webp 1x, img/wx2/image15.2_tab.webp 2x, img/wx3/image15.2_tab.webp 3x")
+						source(type="image/webp" srcset="img/wx1/image15.2_mob.webp 1x, img/wx2/image15.2_mob.webp 2x, img/wx3/image15.2_mob.webp 3x")
+						source(media="(min-width: 1220px)" srcset="img/image15.2_desk.jpg")
+						source(media="(min-width: 768px)" srcset="img/image15.2_tab.jpg")
+						img(src="img/image15.2_mob.jpg" alt="Интерьер" title="Интерьер")
+				.comments__item__right
+					h3.comments__user-name Fatema Asrafi
+					time(datetime="2019-05-17T01:59") May 17, 2018 at 1:59 am
+					blockquote.comments__user-blockquote
+					| To link your Facebook and Twitter accounts, open the Instagram app on your phone or tablet, and select the Profile tab in the bottom-right corner of the screen.
+			li.comments__item
+				.comments__item__left
+					picture.comments__user-img
+						source(type="image/webp" media="(min-width: 1220px)" srcset="img/wx1/image15.2_desk.webp 1x, img/wx2/image15.2_desk.webp 2x, img/wx3/image15.2_desk.webp 3x")
+						source(type="image/webp" media="(min-width: 768px)" srcset="img/wx1/image15.2_tab.webp 1x, img/wx2/image15.2_tab.webp 2x, img/wx3/image15.2_tab.webp 3x")
+						source(type="image/webp" srcset="img/wx1/image15.2_mob.webp 1x, img/wx2/image15.2_mob.webp 2x, img/wx3/image15.2_mob.webp 3x")
+						source(media="(min-width: 1220px)" srcset="img/image15.2_desk.jpg")
+						source(media="(min-width: 768px)" srcset="img/image15.2_tab.jpg")
+						img(src="img/image15.2_mob.jpg" alt="Интерьер" title="Интерьер")
+				.comments__item__right
+					h3.comments__user-name Fatema Asrafi
+					time(datetime="2019-05-17T01:59") May 17, 2018 at 1:59 am
+					blockquote.comments__user-blockquote
+					| To link your Facebook and Twitter accounts, open the Instagram app on your phone or tablet, and select the Profile tab in the bottom-right corner of the screen.
+			li.comments__item
+				.comments__item__left
+					picture.comments__user-img
+						source(type="image/webp" media="(min-width: 1220px)" srcset="img/wx1/image15.2_desk.webp 1x, img/wx2/image15.2_desk.webp 2x, img/wx3/image15.2_desk.webp 3x")
+						source(type="image/webp" media="(min-width: 768px)" srcset="img/wx1/image15.2_tab.webp 1x, img/wx2/image15.2_tab.webp 2x, img/wx3/image15.2_tab.webp 3x")
+						source(type="image/webp" srcset="img/wx1/image15.2_mob.webp 1x, img/wx2/image15.2_mob.webp 2x, img/wx3/image15.2_mob.webp 3x")
+						source(media="(min-width: 1220px)" srcset="img/image15.2_desk.jpg")
+						source(media="(min-width: 768px)" srcset="img/image15.2_tab.jpg")
+						img(src="img/image15.2_mob.jpg" alt="Интерьер" title="Интерьер")
+				.comments__item__right
+					h3.comments__user-name Fatema Asrafi
+					time(datetime="2019-05-17T01:59") May 17, 2018 at 1:59 am
+					blockquote.comments__user-blockquote
+					| To link your Facebook and Twitter accounts, open the Instagram app on your phone or tablet, and select the Profile tab in the bottom-right corner of the screen.
+			form.comments-form(action="#" method="POST")
+				h4.comments-form__header Оставь свой комментарий
+				label.comments-form__label-comments(for="your-review") Your review*
+				textarea#your-review.comments-form__textarea(name="your-review" cols="30" rows="10")
+				label.comments-form__label-name(for="name") Name*
+				input#name.comments-form__input-name(type="text")
+				label.comments-form__label-email(for="email-comments") E-Mail*
+				input#email-comments.comments-form__input-email(type="email" name="")
+				img.comments-form__captcha(src="img/Rectangle-5_desk.jpg" alt="")
+				input.comments-form__submit.form-button(type="submit" value="Добавить комментарий")

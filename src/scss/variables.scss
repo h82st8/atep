@@ -1,0 +1,87 @@
+// sizes and indents
+$main-unit: 1170px;
+
+// media
+$desktop: 1220px;
+$tablet : 768px;
+
+// fonts
+$main-font-family   : "Segoe UI", "Arial", sans-serif;
+$main-font-size     : 15px;
+$main-line-height   : 1;
+
+$accent-font-family : "Poppins", "Arial", sans-serif;
+$logo-font-family   : "Baskerville Old Face", serif;
+
+
+// color
+$main-text-color         : #000000;
+$main-background         : #ffffff;
+$second-background       : #ffe9e2;
+$accent-background       : #000000;
+$main-slider-background  : #000000;
+$active-text-color       : #ff0000;
+$input-text-color        : #c7c7c7;
+$modal-text-color        : #ffffff;
+$modal-page-text-color   : #000000;
+$modal-text-second-color : #000000;
+$border-form-color       : #d1d1d1;
+$modal-search-backdgound : #262626;
+
+// another
+$button-shadow: 0 0 5px 3px rgba($main-text-color, 0.3);
+
+//mixins
+@mixin flex($fx-direction, $fx-justify, $fx-display: flex) {
+	display         : $fx-display;
+	flex-direction  : $fx-direction;
+
+	justify-content : $fx-justify;
+}
+
+@mixin font($f-family, $f-size, $f-weight, $f-height, $f-color, $bg-color) {
+	font-family : $f-family;
+	font-size   : $f-size;
+	font-weight : $f-weight;
+	line-height : $f-height;
+	color       : $f-color;
+
+	background  : $bg-color;
+}
+
+@mixin reset-indent {
+	margin  : 0;
+	padding : 0;
+}
+
+@mixin size ($weight, $height) {
+	width  : $weight;
+	height : $height;
+}
+
+@mixin pseudo($display: block) {
+	position : absolute;
+
+	display  : $display;
+
+	content  : '';
+}
+
+//function
+@function z($layer) {
+	@return map-get($z-indexes, $layer);
+}
+
+$z-indexes: (
+	'accessible'                : -9999,
+	'focus'                     : 999,
+	'main-nav__submenu-wrapper' : 19,
+	'main-nav__submenu'         : 20,
+	'modal'                     : 30,
+	'modal-wrapper'             : 25,
+	'header'                    : 24,
+	'header-after'              : 23,
+	'modal-search__button'      : 1000,
+	'header--show'              : 3,
+	'header__shadow'            : 2,
+);

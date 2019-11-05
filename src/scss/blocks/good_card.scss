@@ -1,0 +1,167 @@
+.good_margin {
+	margin-right: 3%;
+	margin-left: 7%;
+}
+
+.good_card {
+	display: grid;
+	grid-template-columns: 1.33fr 1fr;
+	grid-column-gap: 30px;
+	margin-bottom: 65px;
+
+	&__pic_wrap {
+		display: inline-grid;
+		grid-template-columns: 1fr 3fr;
+		grid-auto-rows: min-content;
+		grid-column-gap: 1em;
+		grid-row-gap: 1em;
+
+		.good_card__pic {
+			display: inline-grid;
+		}
+
+		.good_card__pic_small {
+			width: 100%;
+		}
+
+		.good_card__pic_big {
+			width: 100%;
+			grid-column: 2 / 5;
+			grid-row: 1 / 4;
+		}
+	}
+
+	&__description {
+		display: inline-block;
+
+		.title_price {
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: space-between;
+			align-items: center;
+
+			.good_card__title,
+			.good_card__price {
+				display: inline-block;
+
+				font-family: Segoe UI;
+				font-size: 22px;
+				line-height: 29px;
+			}
+
+			.good_card__price {
+				color: #FF0000;
+			}
+		}
+
+		.good_card__text {
+			font-family: Segoe UI;
+			font-size: 19px;
+			line-height: 25px;
+			color: #000;
+		}
+
+			.good_card__choose_txt {
+				font-family: Segoe UI;
+				font-size: 17px;
+				line-height: 23px;
+				color: #8E8E8E;
+			}
+
+			.good_card__colors,
+			.good_card__sizes {
+				margin: 10px 0 10px;
+			}
+
+			.good_card__colors {
+				.good_card__color {
+					margin: 0 3px 0 3px;
+					border-radius: 50%;
+
+					&:hover {
+						border: 1px solid #000;
+					}
+				}
+
+				.color_red {
+					background-color: #FF0000;
+				}
+				.color_purple {
+					background-color: #B3A7FF;
+				}
+				.color_pink {
+					background-color: #FFC9C9;
+				}
+				.color_orange {
+					background-color: #FFA800;
+				}
+			}
+
+				.good_card__color,
+				.good_card__size {
+					display: inline-block;
+					width: 22px;
+					height: 22px;
+					cursor: pointer;
+					border: 1px solid rgba(#000,0);
+				}
+
+				.good_card__size {
+					padding: 0 3px 0 3px;
+
+					background-color: #fff;
+
+					box-sizing: content-box;
+
+					font-family: Segoe UI;
+					font-size: 17px;
+					line-height: 23px;
+					text-align: center;
+					text-transform: uppercase;
+
+					&:hover {
+						border: 1px solid #000;
+					}
+				}
+
+		.good_card__order {
+			margin-top: 20px;
+			padding-top: 25px;
+			border-top: 1px solid #C8C8C8;
+
+			.order_btn {
+				margin: 5px;
+				border: 1px solid #000;
+
+				background-color: #fff;
+
+				box-sizing: content-box;
+
+				&:hover {
+					background-color: #e5e5e5;
+				}
+			}
+
+			.btn_basket {
+				padding: 5px 40px 10px;
+
+				font-family: Segoe UI;
+				font-size: 22px;
+				line-height: 29px;
+				text-align: center;
+
+				cursor: pointer;
+			}
+
+			.btn_favorite {
+				padding: 0 15px 12px 12px;
+
+				svg {
+					fill: none;
+					stroke: #000;
+					stroke-width: 2px;
+				}
+			}
+		}
+	}
+}

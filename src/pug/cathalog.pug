@@ -1,0 +1,147 @@
+extends includes/template.pug
+
+block variables
+	- var title = 'Cathalog'
+	- var cathalogHtml = true
+
+block content
+	.main-wrapper
+		.cathegory-nav
+			nav.cathegory-nav__content
+				ul.cathegory-nav__flex-container
+					li.cathegory-nav__item
+						a.cathegory-nav__link.cathegory-nav__link_active(href="#") Все
+					li.cathegory-nav__item
+						a.cathegory-nav__link(href="#") Одежда
+					li.cathegory-nav__item
+						a.cathegory-nav__link(href="#") Обувь
+					li.cathegory-nav__item
+						a.cathegory-nav__link(href="#") Аксессуары
+					li.cathegory-nav__item
+						a.cathegory-nav__link(href="#") Новикнки
+		main.cathalog
+			ul.cathalog-list
+				li.cathalog-item
+					.cathalog-item__pink-hue
+						a.cathalog-item__link-button(href="index.html") View
+					picture.cathalog-item__img
+						source(type="image/webp" media="(min-width: 1220px)" srcset="img/wx1/image2_desk.webp 1x, img/wx2/image2_desk.webp 2x, img/wx3/image2_desk.webp 3x")
+						source(type="image/webp" media="(min-width: 768px)" srcset="img/wx1/image2_tab.webp 1x, img/wx2/image2_tab.webp 2x, img/wx3/image2_tab.webp 3x")
+						source(type="image/webp" srcset="img/wx1/image2_mob.webp 1x, img/wx2/image2_mob.webp 2x, img/wx3/image2_mob.webp 3x")
+						source(media="(min-width: 1220px)" srcset="img/image2_desk.jpg")
+						source(media="(min-width: 768px)" srcset="img/image2_tab.jpg")
+						img(src="img/image2_mob.jpg" alt="Clothes" title="Clothes")
+					h3.cathalog-item__title Simple white clock
+					p.cathalog-item__price $25.00
+					a.cathalog-item__link-feedback(href="") Оставить отзыв
+				li.cathalog-item
+					.cathalog-item__pink-hue
+						a.cathalog-item__link-button(href="index.html") View
+					picture.cathalog-item__img
+						source(type="image/webp" media="(min-width: 1220px)" srcset="img/wx1/image3_desk.webp 1x, img/wx2/image3_desk.webp 2x, img/wx3/image3_desk.webp 3x")
+						source(type="image/webp" media="(min-width: 768px)" srcset="img/wx1/image3_tab.webp 1x, img/wx2/image3_tab.webp 2x, img/wx3/image3_tab.webp 3x")
+						source(type="image/webp" srcset="img/wx1/image3_mob.webp 1x, img/wx2/image3_mob.webp 2x, img/wx3/image3_mob.webp 3x")
+						source(media="(min-width: 1220px)" srcset="img/image3_desk.jpg")
+						source(media="(min-width: 768px)" srcset="img/image3_tab.jpg")
+						img(src="img/image3_mob.jpg" alt="Clothes" title="Clothes")
+					h3.cathalog-item__title Simple white clock
+					p.cathalog-item__price $25.00
+					a.cathalog-item__link-feedback(href="") Оставить отзыв
+				li.cathalog-item
+					.cathalog-item__pink-hue
+						a.cathalog-item__link-button(href="index.html") View
+					picture.cathalog-item__img
+						source(type="image/webp" media="(min-width: 1220px)" srcset="img/wx1/image2.4_desk.webp 1x, img/wx2/image2.4_desk.webp 2x, img/wx3/image2.4_desk.webp 3x")
+						source(type="image/webp" media="(min-width: 768px)" srcset="img/wx1/image2.4_tab.webp 1x, img/wx2/image2.4_tab.webp 2x, img/wx3/image2.4_tab.webp 3x")
+						source(type="image/webp" srcset="img/wx1/image2.4_mob.webp 1x, img/wx2/image2.4_mob.webp 2x, img/wx3/image2.4_mob.webp 3x")
+						source(media="(min-width: 1220px)" srcset="img/image2.4_desk.jpg")
+						source(media="(min-width: 768px)" srcset="img/image2.4_tab.jpg")
+						img(src="img/image2.4_mob.jpg" alt="Clothes" title="Clothes")
+					h3.cathalog-item__title Simple white clock
+					p.cathalog-item__price $25.00
+					a.cathalog-item__link-feedback(href="") Оставить отзыв
+				li.cathalog-item
+					.cathalog-item__pink-hue
+						a.cathalog-item__link-button(href="index.html") View
+					picture.cathalog-item__img
+						source(type="image/webp" media="(min-width: 1220px)" srcset="img/wx1/image2_desk.webp 1x, img/wx2/image2_desk.webp 2x, img/wx3/image2_desk.webp 3x")
+						source(type="image/webp" media="(min-width: 768px)" srcset="img/wx1/image2_tab.webp 1x, img/wx2/image2_tab.webp 2x, img/wx3/image2_tab.webp 3x")
+						source(type="image/webp" srcset="img/wx1/image2_mob.webp 1x, img/wx2/image2_mob.webp 2x, img/wx3/image2_mob.webp 3x")
+						source(media="(min-width: 1220px)" srcset="img/image2_desk.jpg")
+						source(media="(min-width: 768px)" srcset="img/image2_tab.jpg")
+						img(src="img/image2_mob.jpg" alt="Clothes" title="Clothes")
+					h3.cathalog-item__title Simple white clock
+					p.cathalog-item__price $25.00
+					a.cathalog-item__link-feedback(href="") Оставить отзыв
+				li.cathalog-item
+					.cathalog-item__pink-hue
+						a.cathalog-item__link-button(href="index.html") View
+					picture.cathalog-item__img
+						source(type="image/webp" media="(min-width: 1220px)" srcset="img/wx1/image3_desk.webp 1x, img/wx2/image3_desk.webp 2x, img/wx3/image3_desk.webp 3x")
+						source(type="image/webp" media="(min-width: 768px)" srcset="img/wx1/image3_tab.webp 1x, img/wx2/image3_tab.webp 2x, img/wx3/image3_tab.webp 3x")
+						source(type="image/webp" srcset="img/wx1/image3_mob.webp 1x, img/wx2/image3_mob.webp 2x, img/wx3/image3_mob.webp 3x")
+						source(media="(min-width: 1220px)" srcset="img/image3_desk.jpg")
+						source(media="(min-width: 768px)" srcset="img/image3_tab.jpg")
+						img(src="img/image3_mob.jpg" alt="Clothes" title="Clothes")
+					h3.cathalog-item__title Simple white clock
+					p.cathalog-item__price $25.00
+					a.cathalog-item__link-feedback(href="") Оставить отзыв
+				li.cathalog-item
+					.cathalog-item__pink-hue
+						a.cathalog-item__link-button(href="index.html") View
+					picture.cathalog-item__img
+						source(type="image/webp" media="(min-width: 1220px)" srcset="img/wx1/image2.4_desk.webp 1x, img/wx2/image2.4_desk.webp 2x, img/wx3/image2.4_desk.webp 3x")
+						source(type="image/webp" media="(min-width: 768px)" srcset="img/wx1/image2.4_tab.webp 1x, img/wx2/image2.4_tab.webp 2x, img/wx3/image2.4_tab.webp 3x")
+						source(type="image/webp" srcset="img/wx1/image2.4_mob.webp 1x, img/wx2/image2.4_mob.webp 2x, img/wx3/image2.4_mob.webp 3x")
+						source(media="(min-width: 1220px)" srcset="img/image2.4_desk.jpg")
+						source(media="(min-width: 768px)" srcset="img/image2.4_tab.jpg")
+						img(src="img/image2.4_mob.jpg" alt="Clothes" title="Clothes")
+					h3.cathalog-item__title Simple white clock
+					p.cathalog-item__price $25.00
+					a.cathalog-item__link-feedback(href="") Оставить отзыв
+				li.cathalog-item
+					.cathalog-item__pink-hue
+						a.cathalog-item__link-button(href="index.html") View
+					picture.cathalog-item__img
+						source(type="image/webp" media="(min-width: 1220px)" srcset="img/wx1/image2_desk.webp 1x, img/wx2/image2_desk.webp 2x, img/wx3/image2_desk.webp 3x")
+						source(type="image/webp" media="(min-width: 768px)" srcset="img/wx1/image2_tab.webp 1x, img/wx2/image2_tab.webp 2x, img/wx3/image2_tab.webp 3x")
+						source(type="image/webp" srcset="img/wx1/image2_mob.webp 1x, img/wx2/image2_mob.webp 2x, img/wx3/image2_mob.webp 3x")
+						source(media="(min-width: 1220px)" srcset="img/image2_desk.jpg")
+						source(media="(min-width: 768px)" srcset="img/image2_tab.jpg")
+						img(src="img/image2_mob.jpg" alt="Clothes" title="Clothes")
+					h3.cathalog-item__title Simple white clock
+					p.cathalog-item__price $25.00
+					a.cathalog-item__link-feedback(href="") Оставить отзыв
+				li.cathalog-item
+					.cathalog-item__pink-hue
+						a.cathalog-item__link-button(href="index.html") View
+					picture.cathalog-item__img
+						source(type="image/webp" media="(min-width: 1220px)" srcset="img/wx1/image3_desk.webp 1x, img/wx2/image3_desk.webp 2x, img/wx3/image3_desk.webp 3x")
+						source(type="image/webp" media="(min-width: 768px)" srcset="img/wx1/image3_tab.webp 1x, img/wx2/image3_tab.webp 2x, img/wx3/image3_tab.webp 3x")
+						source(type="image/webp" srcset="img/wx1/image3_mob.webp 1x, img/wx2/image3_mob.webp 2x, img/wx3/image3_mob.webp 3x")
+						source(media="(min-width: 1220px)" srcset="img/image3_desk.jpg")
+						source(media="(min-width: 768px)" srcset="img/image3_tab.jpg")
+						img(src="img/image3_mob.jpg" alt="Clothes" title="Clothes")
+					h3.cathalog-item__title Simple white clock
+					p.cathalog-item__price $25.00
+					a.cathalog-item__link-feedback(href="") Оставить отзыв
+				li.cathalog-item
+					.cathalog-item__pink-hue
+						a.cathalog-item__link-button(href="index.html") View
+					picture.cathalog-item__img
+						source(type="image/webp" media="(min-width: 1220px)" srcset="img/wx1/image2.4_desk.webp 1x, img/wx2/image2.4_desk.webp 2x, img/wx3/image2.4_desk.webp 3x")
+						source(type="image/webp" media="(min-width: 768px)" srcset="img/wx1/image2.4_tab.webp 1x, img/wx2/image2.4_tab.webp 2x, img/wx3/image2.4_tab.webp 3x")
+						source(type="image/webp" srcset="img/wx1/image2.4_mob.webp 1x, img/wx2/image2.4_mob.webp 2x, img/wx3/image2.4_mob.webp 3x")
+						source(media="(min-width: 1220px)" srcset="img/image2.4_desk.jpg")
+						source(media="(min-width: 768px)" srcset="img/image2.4_tab.jpg")
+						img(src="img/image2.4_mob.jpg" alt="Clothes" title="Clothes")
+					h3.cathalog-item__title Simple white clock
+					p.cathalog-item__price $25.00
+					a.cathalog-item__link-feedback(href="") Оставить отзыв
+		nav.cathalog__breadcrumbs
+			a.cathalog__breadcrumbs-item.cathalog__breadcrumbs-item_active(href="#") 1
+			a.cathalog__breadcrumbs-item(href="#") 2
+			a.cathalog__breadcrumbs-item(href="#") 3
+			a.cathalog__breadcrumbs-item(href="#") 4
+			span ...
+			a.cathalog__breadcrumbs-item(href="#") 14

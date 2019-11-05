@@ -1,0 +1,34 @@
+.stock-slider {
+    width: 1440px;
+    margin: 0 auto;
+    position: relative;
+
+    .stock-main__text-block {
+        width: 390px;
+        height: 128px;
+        position: absolute;
+        bottom: 50px;
+        left: 105px;
+        padding: 17px 23px;
+        background-color: $main-background;
+
+        .stock-main__text {
+            margin: 0;
+            @include font($accent-font-family, 31px, 300, 46px, $main-text-color, none);
+            // font-weight: 300;
+        }
+
+    }
+
+    .stock-slider__switcher {
+        @include flex(row, center);
+        align-items: center;
+        width: 67px;
+        height: 67px;
+        position: absolute;
+        bottom: 50%;
+        right: 15px;
+        background-color: $main-background;
+        transform: translateY(50%);
+    }
+}
