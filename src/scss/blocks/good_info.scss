@@ -8,6 +8,10 @@
 		padding-bottom: 15px;
 		border-bottom: 2px solid #C8C8C8;
 		width: 75%;
+		@media (max-width: 767px) {
+			width: 75%;
+			margin: 0 auto;
+		}
 
 		.good_info__btn {
 			display: inline-block;
@@ -24,6 +28,11 @@
 			text-align: center;
 
 			cursor: pointer;
+
+			@media (max-width: 767px) {
+				font-size: 16px;
+				line-height: 19px;
+			}
 		}
 
 		.active {

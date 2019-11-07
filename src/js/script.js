@@ -315,14 +315,31 @@ window.onload = function () {
       }
       event.target.classList.add('active');
       //все вкладки с содержимым
+
       var tabBody = document.getElementsByClassName('tab-block');
+
+      function fadeIn(tabBody) {
+        var opacity = 0.01;
+        tabBody.style.opacity = 0.01;
+        tabBody.style.display = "block";
+        var timer = setInterval(function() {
+          if(opacity >= 1) {
+            clearInterval(timer);
+          }
+          tabBody.style.opacity = opacity;
+            opacity += opacity * 0.1;
+        }, 10);
+      }
+
       for (var i = 0; i < tabBody.length; i++){
         if (dataTab == i) {
-          tabBody[i].style.display = 'block';
+          fadeIn(tabBody[i]);
         }else {
           tabBody[i].style.display = 'none';
         }
       }
     }
   }
+
+
 }

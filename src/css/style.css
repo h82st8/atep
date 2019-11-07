@@ -3208,6 +3208,10 @@ body {
   padding-bottom: 15px;
   border-bottom: 2px solid #C8C8C8;
   width: 75%; }
+  @media (max-width: 767px) {
+    .good_info__btns {
+      width: 75%;
+      margin: 0 auto; } }
   .good_info__btns .good_info__btn {
     display: inline-block;
     padding: 0 20px;
@@ -3219,6 +3223,10 @@ body {
     line-height: 29px;
     text-align: center;
     cursor: pointer; }
+    @media (max-width: 767px) {
+      .good_info__btns .good_info__btn {
+        font-size: 16px;
+        line-height: 19px; } }
   .good_info__btns .active {
     position: relative; }
     .good_info__btns .active:after {
