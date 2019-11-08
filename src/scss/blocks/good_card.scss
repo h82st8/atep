@@ -44,25 +44,26 @@
 			.good_card__price {
 				display: inline-block;
 
-				font-family: Segoe UI;
+				font-family: $main-font-family;
 				font-size: 22px;
 				line-height: 29px;
+				color: $main-text-color;
 			}
 
 			.good_card__price {
-				color: #FF0000;
+				color: $active-text-color;
 			}
 		}
 
 		.good_card__text {
-			font-family: Segoe UI;
+			font-family: $main-font-family;
 			font-size: 19px;
 			line-height: 25px;
-			color: #000;
+			color: $main-text-color;
 		}
 
 			.good_card__choose_txt {
-				font-family: Segoe UI;
+				font-family: $main-font-family;
 				font-size: 17px;
 				line-height: 23px;
 				color: #8E8E8E;
@@ -109,15 +110,16 @@
 				.good_card__size {
 					padding: 0 3px 0 3px;
 
-					background-color: #fff;
+					background-color: $main-background;
 
 					box-sizing: content-box;
 
-					font-family: Segoe UI;
+					font-family: $main-font-family;
 					font-size: 17px;
 					line-height: 23px;
 					text-align: center;
 					text-transform: uppercase;
+					color: $main-text-color;
 
 					&:hover {
 						border: 1px solid #000;
@@ -133,22 +135,23 @@
 				margin: 5px;
 				border: 1px solid #000;
 
-				background-color: #fff;
+				background-color: $main-background;
 
 				box-sizing: content-box;
 
 				&:hover {
-					background-color: #e5e5e5;
+					background-color: $second-background;
 				}
 			}
 
 			.btn_basket {
 				padding: 5px 40px 10px;
 
-				font-family: Segoe UI;
+				font-family: $main-font-family;
 				font-size: 22px;
 				line-height: 29px;
 				text-align: center;
+				color: $main-text-color;
 
 				cursor: pointer;
 			}
