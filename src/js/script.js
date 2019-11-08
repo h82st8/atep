@@ -340,6 +340,4 @@ window.onload = function () {
       }
     }
   }
-
-
 }
