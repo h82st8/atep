@@ -3110,9 +3110,11 @@ body {
       display: -webkit-flex;
       display: -ms-flexbox;
       display: flex;
-      -webkit-flex-wrap: wrap;
-          -ms-flex-wrap: wrap;
-              flex-wrap: wrap;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+      -webkit-flex-direction: row;
+          -ms-flex-direction: row;
+              flex-direction: row;
       -webkit-box-pack: justify;
       -webkit-justify-content: space-between;
           -ms-flex-pack: justify;
@@ -3126,20 +3128,28 @@ body {
         display: inline-block;
         font-family: "Segoe UI", "Arial", sans-serif;
         font-size: 22px;
+        font-weight: normal;
         line-height: 29px;
-        color: #000000; }
+        color: #000000;
+        background: #ffffff; }
+      .good_card__description .title_price .good_card__title {
+        font-weight: bold; }
       .good_card__description .title_price .good_card__price {
         color: #ff0000; }
     .good_card__description .good_card__text {
       font-family: "Segoe UI", "Arial", sans-serif;
       font-size: 19px;
+      font-weight: normal;
       line-height: 25px;
-      color: #000000; }
+      color: #000000;
+      background: #ffffff; }
     .good_card__description .good_card__choose_txt {
       font-family: "Segoe UI", "Arial", sans-serif;
       font-size: 17px;
+      font-weight: normal;
       line-height: 23px;
-      color: #8E8E8E; }
+      color: #8E8E8E;
+      background: #ffffff; }
     .good_card__description .good_card__colors,
     .good_card__description .good_card__sizes {
       margin: 10px 0 10px; }
@@ -3170,10 +3180,12 @@ body {
               box-sizing: content-box;
       font-family: "Segoe UI", "Arial", sans-serif;
       font-size: 17px;
+      font-weight: normal;
       line-height: 23px;
+      color: #000000;
+      background: #ffffff;
       text-align: center;
-      text-transform: uppercase;
-      color: #000000; }
+      text-transform: uppercase; }
       .good_card__description .good_card__size:hover {
         border: 1px solid #000; }
     .good_card__description .good_card__order {
@@ -3192,9 +3204,11 @@ body {
         padding: 5px 40px 10px;
         font-family: "Segoe UI", "Arial", sans-serif;
         font-size: 22px;
+        font-weight: normal;
         line-height: 29px;
-        text-align: center;
         color: #000000;
+        background: #ffffff;
+        text-align: center;
         cursor: pointer; }
       .good_card__description .good_card__order .btn_favorite {
         padding: 0 15px 12px 12px; }
@@ -3223,9 +3237,11 @@ body {
     background-color: #fff;
     font-family: "Segoe UI", "Arial", sans-serif;
     font-size: 22px;
+    font-weight: normal;
     line-height: 29px;
-    text-align: center;
     color: #000000;
+    background: #ffffff;
+    text-align: center;
     cursor: pointer; }
     @media (max-width: 767px) {
       .good_info__btns .good_info__btn {
@@ -3235,9 +3251,10 @@ body {
     position: relative; }
     .good_info__btns .active:after {
       position: absolute;
+      display: block;
+      content: '';
       bottom: -18px;
       left: 0;
-      content: '';
       width: 100%;
       height: 2px;
       background-color: #000000; }
@@ -3249,8 +3266,10 @@ body {
   .good_info__content .good_info__details .good_info__txt {
     font-family: "Segoe UI", "Arial", sans-serif;
     font-size: 22px;
+    font-weight: normal;
     line-height: 29px;
-    color: #000000; }
+    color: #000000;
+    background: #ffffff; }
   .good_info__content .good_info__details .good_info__title {
     margin-bottom: 0;
     font-weight: normal; }
@@ -3271,8 +3290,10 @@ body {
     .good_info__content .good_info__review_wrap .good_info__review .review_name {
       font-family: "Segoe UI", "Arial", sans-serif;
       font-size: 16px;
+      font-weight: normal;
       line-height: 21px;
-      color: #000000; }
+      color: #000000;
+      background: #ffffff; }
 
 .good_info__content .good_info__form_wrap {
   display: none;
@@ -3282,8 +3303,10 @@ body {
     width: 80%;
     font-family: "Segoe UI", "Arial", sans-serif;
     font-size: 20px;
+    font-weight: normal;
     line-height: 27px;
-    color: #000000; }
+    color: #000000;
+    background: #ffffff; }
   .good_info__content .good_info__form_wrap .form__rating {
     margin-top: 15px; }
   .good_info__content .good_info__form_wrap .good_info__form .good_info__form_box {
@@ -3305,7 +3328,9 @@ body {
       background-color: #ffffff;
       font-family: "Segoe UI", "Arial", sans-serif;
       font-size: 17px;
+      font-weight: normal;
       line-height: 23px;
-      color: #000000; }
+      color: #000000;
+      background: #ffffff; }
       .good_info__content .good_info__form_wrap .good_info__form .good_info__form_btn_wrap .good_info__form_btn:hover {
         background-color: #e5e5e5; }

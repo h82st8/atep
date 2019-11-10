@@ -1,21 +1,28 @@
 section.good_card.good_margin
 
 	.good_card__pic_wrap
-		+picSmall
-		+picSmall
-		+picSmall
-		+picBig
+		img.good_card__pic.good_card__pic_small(src="img/wx1/image3.1_desk.webp")
+		img.good_card__pic.good_card__pic_small(src="img/wx1/image3.1_desk.webp")
+		img.good_card__pic.good_card__pic_small(src="img/wx1/image3.1_desk.webp")
+		img.good_card__pic.good_card__pic_big(src="img/wx2/image3.1_desk.webp")
 
 	.good_card__description
 		.title_price
 			h1.good_card__title Gold Plated Desk Lantern Lamp
 			span.good_card__price $112.00
+
 		.good_card__rating
-			+goldStar
-			+goldStar
-			+goldStar
-			+goldStar
-			+greyStar
+		svg(width='18' height='18')
+			use(xlink:href='img/star.svg#icon-rating')
+		svg(width='18' height='18')
+			use(xlink:href='img/star.svg#icon-rating')
+		svg(width='18' height='18')
+			use(xlink:href='img/star.svg#icon-rating')
+		svg(width='18' height='18')
+			use(xlink:href='img/star.svg#icon-rating')
+		svg(width='18' height='18')
+			use(xlink:href='img/star.svg#icon-rating_none')
+
 		p.good_card__text.
 			On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms.
 		.good_card__choose_color

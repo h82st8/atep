@@ -59,7 +59,7 @@ $button-shadow: 0 0 5px 3px rgba($main-text-color, 0.3);
 	height : $height;
 }
 
-@mixin pseudo($display: block) {
+@mixin pseudo ($display: block) {
 	position : absolute;
 
 	display  : $display;

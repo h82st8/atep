@@ -54,6 +54,10 @@ mixin iconLink(classNameA,linkIcon,nameIcon,srcIcon)
 		svg.user-menu__icon(width='25' height='25')
 			use(xlink:href='img/sprite.svg#' + srcIcon + '')
 
+mixin star(srcStar)
+	svg(width='18' height='18')
+		use(xlink:href='img/star.svg#' + srcStar)
+
 mixin logoItem
 	.logo
 		if(indexHtml)
@@ -64,17 +68,3 @@ mixin logoItem
 			a.logo__link(aria-label='На главную страницу', href='index.html')
 				| A
 				span tep
-
-mixin picSmall
-	img.good_card__pic.good_card__pic_small(src="img/wx1/image3.1_desk.webp")
-
-mixin picBig
-	img.good_card__pic.good_card__pic_big(src="img/wx2/image3.1_desk.webp")
-
-mixin goldStar
-	svg(width='18' height='18')
-		use(xlink:href='img/star.svg#icon-rating')
-
-mixin greyStar
-	svg(width='18' height='18')
-		use(xlink:href='img/star.svg#icon-rating_none')

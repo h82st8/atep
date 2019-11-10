@@ -35,19 +35,18 @@
 		display: inline-block;
 
 		.title_price {
-			display: flex;
-			flex-wrap: wrap;
-			justify-content: space-between;
+			@include flex(row, space-between);
 			align-items: center;
 
 			.good_card__title,
 			.good_card__price {
 				display: inline-block;
 
-				font-family: $main-font-family;
-				font-size: 22px;
-				line-height: 29px;
-				color: $main-text-color;
+				@include font($main-font-family, 22px, normal, 29px, $main-text-color, $main-background);
+			}
+
+			.good_card__title {
+				font-weight: bold;
 			}
 
 			.good_card__price {
@@ -56,17 +55,11 @@
 		}
 
 		.good_card__text {
-			font-family: $main-font-family;
-			font-size: 19px;
-			line-height: 25px;
-			color: $main-text-color;
+			@include font($main-font-family, 19px, normal, 25px, $main-text-color, $main-background);
 		}
 
 			.good_card__choose_txt {
-				font-family: $main-font-family;
-				font-size: 17px;
-				line-height: 23px;
-				color: #8E8E8E;
+				@include font($main-font-family, 17px, normal, 23px, #8E8E8E, $main-background);
 			}
 
 			.good_card__colors,
@@ -101,8 +94,7 @@
 				.good_card__color,
 				.good_card__size {
 					display: inline-block;
-					width: 22px;
-					height: 22px;
+					@include size(22px, 22px);
 					cursor: pointer;
 					border: 1px solid rgba(#000,0);
 				}
@@ -114,12 +106,9 @@
 
 					box-sizing: content-box;
 
-					font-family: $main-font-family;
-					font-size: 17px;
-					line-height: 23px;
+					@include font($main-font-family, 17px, normal, 23px, $main-text-color, $main-background);
 					text-align: center;
 					text-transform: uppercase;
-					color: $main-text-color;
 
 					&:hover {
 						border: 1px solid #000;
@@ -147,11 +136,8 @@
 			.btn_basket {
 				padding: 5px 40px 10px;
 
-				font-family: $main-font-family;
-				font-size: 22px;
-				line-height: 29px;
+				@include font($main-font-family, 22px, normal, 29px, $main-text-color, $main-background);
 				text-align: center;
-				color: $main-text-color;
 
 				cursor: pointer;
 			}
